@@ -1,0 +1,228 @@
+import { Award, Users, Heart, Target } from 'lucide-react';
+
+export default function Sobre() {
+  const values = [
+    {
+      icon: <Heart className="w-8 h-8" />,
+      title: 'Cuidado Humanizado',
+      description: 'Tratamos cada paciente com atenção, carinho e respeito, priorizando seu bem-estar e conforto.'
+    },
+    {
+      icon: <Award className="w-8 h-8" />,
+      title: 'Excelência Técnica',
+      description: 'Mantemos os mais altos padrões de qualidade em todos os nossos procedimentos e tratamentos.'
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: 'Equipe Qualificada',
+      description: 'Nossa equipe está em constante atualização para oferecer as técnicas mais modernas e seguras.'
+    },
+    {
+      icon: <Target className="w-8 h-8" />,
+      title: 'Resultados Naturais',
+      description: 'Focamos em realçar a beleza natural de cada paciente, respeitando suas características únicas.'
+    }
+  ];
+
+  return (
+    <div className="">
+      {/* Hero Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-4xl lg:text-5xl font-playfair font-bold text-gray-900 leading-tight">
+                  Sobre a Clínica
+                  <span className="text-gray-600"> Monalisy Rodrigues</span>
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Uma clínica dedicada à medicina estética com foco na excelência, 
+                  segurança e resultados naturais que realçam a beleza única de cada paciente.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1325.794697002969!2d-44.19739944766124!3d-19.970131989849698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c391895afe2b%3A0x1602e6d2425a1bca!2sDra.%20Monalisy%20Rodrigues!5e0!3m2!1sen!2sbr!4v1750768298613!5m2!1sen!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização da Clínica Monalisy Rodrigues"
+              />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div className="text-center">
+              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Missão</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Proporcionar tratamentos estéticos de alta qualidade, combinando tecnologia 
+                avançada com cuidado humanizado, para realçar a beleza natural e promover 
+                o bem-estar de nossos pacientes.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Visão</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Ser reconhecida como referência em medicina estética, destacando-se pela 
+                excelência técnica, inovação e resultados naturais que respeitam a 
+                individualidade de cada paciente.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Valores</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Ética, transparência, segurança, excelência técnica e cuidado humanizado 
+                são os pilares que orientam nossa prática médica e nosso relacionamento 
+                com cada paciente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900 mb-4">
+              Nossos Diferenciais
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              O que nos torna únicos na área de medicina estética e como nos comprometemos 
+              com a excelência em cada atendimento.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="text-center group">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-gray-600 rounded-2xl mb-6 shadow-sm group-hover:bg-gray-900 group-hover:text-white transition-colors duration-300">
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900">
+                Dra. Monalisy Rodrigues
+              </h2>
+              <div className="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  Médica especializada em medicina estética com vasta experiência em procedimentos 
+                  faciais, corporais e capilares. Graduada em Medicina e especializada em 
+                  Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.
+                </p>
+                <p>
+                  Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na 
+                  área estética, participando regularmente de congressos e cursos de atualização 
+                  para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.
+                </p>
+                <p>
+                  Sua filosofia de trabalho baseia-se na valorização da beleza natural, 
+                  respeitando as características individuais e promovendo resultados harmoniosos 
+                  e naturais através de técnicas minimamente invasivas.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-6 pt-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Formação</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Medicina - Universidade Federal</li>
+                    <li>• Especialização em Dermatologia</li>
+                    <li>• Pós-graduação em Medicina Estética</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Especializações</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Harmonização Facial</li>
+                    <li>• Rejuvenescimento</li>
+                    <li>• Tratamentos Corporais</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                <img
+                  src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8"
+                  alt="Dra. Monalisy Rodrigues"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gray-100 rounded-2xl -z-10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900 mb-4">
+              Tecnologia e Equipamentos
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Investimos constantemente em tecnologia de ponta para oferecer os melhores 
+              resultados com máxima segurança e conforto.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Equipamentos Modernos
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Utilizamos apenas equipamentos certificados e de última geração, 
+                garantindo eficácia e segurança em todos os procedimentos.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Protocolos Rigorosos
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Seguimos protocolos internacionais de segurança e higiene, 
+                assegurando o mais alto padrão de qualidade em nossos atendimentos.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Ambiente Seguro
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Nossa clínica oferece um ambiente totalmente seguro e confortável, 
+                projetado para proporcionar tranquilidade durante os tratamentos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
