@@ -98,8 +98,8 @@ export default function Tratamentos() {
     { id: 'capilar', name: 'Tratamentos Capilares', icon: <Award className="w-5 h-5" /> }
   ];
 
-  const filteredTreatments = selectedCategory === 'todos' 
-    ? treatments 
+  const filteredTreatments = selectedCategory === 'todos'
+    ? treatments
     : treatments.filter(treatment => treatment.category === selectedCategory);
 
   return (
@@ -112,7 +112,7 @@ export default function Tratamentos() {
               Nossos Tratamentos
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              Descubra nossa ampla gama de tratamentos estéticos para face, corpo e cabelo. 
+              Descubra nossa ampla gama de tratamentos estéticos para face, corpo e cabelo.
               Cada procedimento é personalizado para realçar sua beleza natural com segurança e eficácia.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
@@ -144,9 +144,9 @@ export default function Tratamentos() {
                 className={`
                   flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300
                   ${selectedCategory === category.id
-                    ? 'bg-gray-900 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800'
-                  }
+                ? 'bg-gray-900 text-white shadow-lg'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800'
+              }
                 `}
               >
                 {category.icon}
@@ -197,7 +197,7 @@ export default function Tratamentos() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 mb-4 leading-relaxed">
                     {treatment.description}
                   </p>
@@ -210,11 +210,11 @@ export default function Tratamentos() {
                     <div className={`
                       px-3 py-1 rounded-full text-xs font-medium
                       ${treatment.category === 'facial' ? 'bg-blue-100 text-blue-800' :
-                        treatment.category === 'corporal' ? 'bg-green-100 text-green-800' :
-                        'bg-purple-100 text-purple-800'}
+                treatment.category === 'corporal' ? 'bg-green-100 text-green-800' :
+                  'bg-purple-100 text-purple-800'}
                     `}>
                       {treatment.category === 'facial' ? 'Facial' :
-                       treatment.category === 'corporal' ? 'Corporal' : 'Capilar'}
+                        treatment.category === 'corporal' ? 'Corporal' : 'Capilar'}
                     </div>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export default function Tratamentos() {
               Pronto para transformar sua beleza?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma consulta personalizada e descubra qual tratamento é ideal 
+              Agende uma consulta personalizada e descubra qual tratamento é ideal
               para alcançar seus objetivos estéticos com segurança e eficácia.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

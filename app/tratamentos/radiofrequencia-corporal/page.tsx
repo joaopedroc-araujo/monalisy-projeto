@@ -82,7 +82,7 @@ export default function RadiofrequenciaCorporal() {
                   Radiofrequência Corporal
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Tratamento para firmeza e tonificação da pele, reduzindo flacidez corporal 
+                  Tratamento para firmeza e tonificação da pele, reduzindo flacidez corporal
                   através do aquecimento controlado das camadas profundas.
                 </p>
               </div>
@@ -132,18 +132,18 @@ export default function RadiofrequenciaCorporal() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  A radiofrequência corporal utiliza ondas eletromagnéticas para aquecer as camadas 
-                  profundas da pele, estimulando a produção de colágeno e elastina. Isso resulta em 
+                  A radiofrequência corporal utiliza ondas eletromagnéticas para aquecer as camadas
+                  profundas da pele, estimulando a produção de colágeno e elastina. Isso resulta em
                   maior firmeza, redução da flacidez e melhora da textura da pele.
                 </p>
                 <p>
-                  O aquecimento controlado promove a contração das fibras de colágeno existentes 
-                  e estimula a formação de novas fibras, proporcionando um efeito lifting natural 
+                  O aquecimento controlado promove a contração das fibras de colágeno existentes
+                  e estimula a formação de novas fibras, proporcionando um efeito lifting natural
                   e progressivo. É um tratamento confortável e relaxante.
                 </p>
                 <p>
-                  Além dos benefícios estéticos, a radiofrequência melhora a circulação sanguínea 
-                  e linfática, contribuindo para a saúde geral da pele e redução de medidas por 
+                  Além dos benefícios estéticos, a radiofrequência melhora a circulação sanguínea
+                  e linfática, contribuindo para a saúde geral da pele e redução de medidas por
                   melhora do metabolismo local.
                 </p>
               </div>
@@ -307,7 +307,7 @@ export default function RadiofrequenciaCorporal() {
                 O tratamento é doloroso?
               </h3>
               <p className="text-gray-600">
-                Não, a radiofrequência proporciona uma sensação de aquecimento agradável 
+                Não, a radiofrequência proporciona uma sensação de aquecimento agradável
                 e relaxante. Muitos pacientes consideram o tratamento prazeroso.
               </p>
             </div>
@@ -316,7 +316,7 @@ export default function RadiofrequenciaCorporal() {
                 Posso fazer exercícios após o tratamento?
               </h3>
               <p className="text-gray-600">
-                Sim, não há restrições. Você pode retomar suas atividades normais 
+                Sim, não há restrições. Você pode retomar suas atividades normais
                 imediatamente após a sessão.
               </p>
             </div>
@@ -325,7 +325,7 @@ export default function RadiofrequenciaCorporal() {
                 Qual a diferença para outros tratamentos?
               </h3>
               <p className="text-gray-600">
-                A radiofrequência atua estimulando a produção natural de colágeno, 
+                A radiofrequência atua estimulando a produção natural de colágeno,
                 proporcionando resultados graduais e naturais sem invasividade.
               </p>
             </div>
@@ -341,7 +341,7 @@ export default function RadiofrequenciaCorporal() {
               Pronto para conquistar uma pele mais firme?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma avaliação e descubra como a radiofrequência corporal 
+              Agende uma avaliação e descubra como a radiofrequência corporal
               pode ajudar você a ter uma pele mais firme e tonificada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

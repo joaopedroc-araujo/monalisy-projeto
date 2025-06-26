@@ -82,7 +82,7 @@ export default function Criolipolise() {
                   Criolipólise
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Eliminação de gordura localizada através do congelamento controlado das células 
+                  Eliminação de gordura localizada através do congelamento controlado das células
                   adiposas, sem cirurgia e com resultados duradouros.
                 </p>
               </div>
@@ -132,18 +132,18 @@ export default function Criolipolise() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  A criolipólise é um tratamento não invasivo que utiliza o frio controlado para 
-                  eliminar células de gordura localizada. O procedimento congela as células adiposas, 
+                  A criolipólise é um tratamento não invasivo que utiliza o frio controlado para
+                  eliminar células de gordura localizada. O procedimento congela as células adiposas,
                   que são naturalmente eliminadas pelo organismo ao longo das semanas seguintes.
                 </p>
                 <p>
-                  Esta tecnologia revolucionária permite reduzir camadas de gordura sem cirurgia, 
-                  cortes ou anestesia. O frio aplicado de forma controlada destrói apenas as células 
+                  Esta tecnologia revolucionária permite reduzir camadas de gordura sem cirurgia,
+                  cortes ou anestesia. O frio aplicado de forma controlada destrói apenas as células
                   de gordura, preservando os tecidos circundantes como pele, músculos e nervos.
                 </p>
                 <p>
-                  Os resultados são progressivos e naturais, com redução visível da gordura localizada 
-                  entre 2 a 4 meses após o tratamento. É ideal para pessoas próximas ao peso ideal 
+                  Os resultados são progressivos e naturais, com redução visível da gordura localizada
+                  entre 2 a 4 meses após o tratamento. É ideal para pessoas próximas ao peso ideal
                   que possuem gorduras resistentes à dieta e exercícios.
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default function Criolipolise() {
                 Quantas sessões são necessárias?
               </h3>
               <p className="text-gray-600">
-                Geralmente uma sessão é suficiente por área. Em casos específicos, 
+                Geralmente uma sessão é suficiente por área. Em casos específicos,
                 uma segunda sessão pode ser recomendada após 3 meses.
               </p>
             </div>
@@ -330,7 +330,7 @@ export default function Criolipolise() {
                 O procedimento é doloroso?
               </h3>
               <p className="text-gray-600">
-                Inicialmente há sensação de frio intenso que se torna confortável. 
+                Inicialmente há sensação de frio intenso que se torna confortável.
                 Muitos pacientes relaxam ou até dormem durante o tratamento.
               </p>
             </div>
@@ -339,7 +339,7 @@ export default function Criolipolise() {
                 Posso ganhar peso após o tratamento?
               </h3>
               <p className="text-gray-600">
-                As células eliminadas não retornam, mas é importante manter hábitos 
+                As células eliminadas não retornam, mas é importante manter hábitos
                 saudáveis para preservar os resultados obtidos.
               </p>
             </div>
@@ -355,7 +355,7 @@ export default function Criolipolise() {
               Pronto para eliminar a gordura localizada?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma avaliação e descubra como a criolipólise pode ajudar você 
+              Agende uma avaliação e descubra como a criolipólise pode ajudar você
               a conquistar o corpo que sempre desejou.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -93,7 +93,7 @@ export default function HarmonizacaoFacial() {
                   Harmonização Facial
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Procedimento que visa equilibrar e realçar os traços faciais de forma natural e harmoniosa, 
+                  Procedimento que visa equilibrar e realçar os traços faciais de forma natural e harmoniosa,
                   utilizando técnicas avançadas de preenchimento e contorno.
                 </p>
               </div>
@@ -143,19 +143,19 @@ export default function HarmonizacaoFacial() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  A harmonização facial é um conjunto de procedimentos estéticos que tem como objetivo 
-                  equilibrar as proporções do rosto, realçando a beleza natural de cada paciente. 
-                  Utilizamos técnicas modernas com ácido hialurônico e outros bioestimuladores para 
+                  A harmonização facial é um conjunto de procedimentos estéticos que tem como objetivo
+                  equilibrar as proporções do rosto, realçando a beleza natural de cada paciente.
+                  Utilizamos técnicas modernas com ácido hialurônico e outros bioestimuladores para
                   criar resultados naturais e harmoniosos.
                 </p>
                 <p>
-                  O procedimento é realizado de forma personalizada, considerando as características 
-                  únicas de cada rosto. Nossa abordagem visa manter a naturalidade, respeitando a 
+                  O procedimento é realizado de forma personalizada, considerando as características
+                  únicas de cada rosto. Nossa abordagem visa manter a naturalidade, respeitando a
                   identidade facial do paciente enquanto promove melhorias sutis e elegantes.
                 </p>
                 <p>
-                  Com técnicas avançadas e produtos de alta qualidade, conseguimos resultados 
-                  imediatos que evoluem positivamente ao longo das semanas seguintes, proporcionando 
+                  Com técnicas avançadas e produtos de alta qualidade, conseguimos resultados
+                  imediatos que evoluem positivamente ao longo das semanas seguintes, proporcionando
                   maior confiança e bem-estar.
                 </p>
               </div>
@@ -256,7 +256,7 @@ export default function HarmonizacaoFacial() {
                 Quanto tempo dura o resultado?
               </h3>
               <p className="text-gray-600">
-                Os resultados da harmonização facial podem durar de 12 a 18 meses, dependendo 
+                Os resultados da harmonização facial podem durar de 12 a 18 meses, dependendo
                 do produto utilizado e das características individuais de cada paciente.
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function HarmonizacaoFacial() {
                 O procedimento é doloroso?
               </h3>
               <p className="text-gray-600">
-                O desconforto é mínimo. Utilizamos anestésico tópico e os produtos já contêm 
+                O desconforto é mínimo. Utilizamos anestésico tópico e os produtos já contêm
                 lidocaína, garantindo maior conforto durante o procedimento.
               </p>
             </div>
@@ -274,7 +274,7 @@ export default function HarmonizacaoFacial() {
                 Quando posso ver os resultados?
               </h3>
               <p className="text-gray-600">
-                Os resultados são imediatos, mas o efeito final pode ser observado após 
+                Os resultados são imediatos, mas o efeito final pode ser observado após
                 2 semanas, quando o produto se integra completamente aos tecidos.
               </p>
             </div>
@@ -290,7 +290,7 @@ export default function HarmonizacaoFacial() {
               Pronto para harmonizar sua beleza facial?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma consulta personalizada e descubra como a harmonização facial 
+              Agende uma consulta personalizada e descubra como a harmonização facial
               pode realçar sua beleza natural com segurança e naturalidade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

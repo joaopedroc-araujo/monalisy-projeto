@@ -82,7 +82,7 @@ export default function MesoterapiaCapilar() {
                   Mesoterapia Capilar
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Aplicação de ativos revitalizantes diretamente no couro cabeludo para estimular 
+                  Aplicação de ativos revitalizantes diretamente no couro cabeludo para estimular
                   o crescimento e fortalecer os fios de forma eficaz.
                 </p>
               </div>
@@ -132,19 +132,19 @@ export default function MesoterapiaCapilar() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  A mesoterapia capilar consiste na aplicação de um coquetel de vitaminas, minerais 
-                  e ativos específicos diretamente no couro cabeludo. Este tratamento estimula a 
-                  circulação sanguínea, fortalece os folículos pilosos e promove o crescimento de 
+                  A mesoterapia capilar consiste na aplicação de um coquetel de vitaminas, minerais
+                  e ativos específicos diretamente no couro cabeludo. Este tratamento estimula a
+                  circulação sanguínea, fortalece os folículos pilosos e promove o crescimento de
                   fios mais saudáveis.
                 </p>
                 <p>
-                  Os ativos são aplicados através de microinjeções na derme do couro cabeludo, 
-                  garantindo que os nutrientes cheguem diretamente aos folículos pilosos. Isso 
+                  Os ativos são aplicados através de microinjeções na derme do couro cabeludo,
+                  garantindo que os nutrientes cheguem diretamente aos folículos pilosos. Isso
                   resulta em maior eficácia comparado aos tratamentos tópicos convencionais.
                 </p>
                 <p>
-                  O tratamento é personalizado conforme as necessidades específicas de cada paciente, 
-                  podendo incluir vitaminas do complexo B, aminoácidos, minerais, fatores de 
+                  O tratamento é personalizado conforme as necessidades específicas de cada paciente,
+                  podendo incluir vitaminas do complexo B, aminoácidos, minerais, fatores de
                   crescimento e outros ativos que nutrem e revitalizam o couro cabeludo.
                 </p>
               </div>
@@ -316,7 +316,7 @@ export default function MesoterapiaCapilar() {
                 O procedimento é doloroso?
               </h3>
               <p className="text-gray-600">
-                O desconforto é mínimo. Utilizamos agulhas muito finas e técnicas que 
+                O desconforto é mínimo. Utilizamos agulhas muito finas e técnicas que
                 minimizam qualquer incômodo durante a aplicação.
               </p>
             </div>
@@ -325,7 +325,7 @@ export default function MesoterapiaCapilar() {
                 Quando posso ver os primeiros resultados?
               </h3>
               <p className="text-gray-600">
-                Os primeiros sinais de melhora aparecem após 4-6 semanas, com redução 
+                Os primeiros sinais de melhora aparecem após 4-6 semanas, com redução
                 da queda e melhora da qualidade dos fios.
               </p>
             </div>
@@ -334,7 +334,7 @@ export default function MesoterapiaCapilar() {
                 Posso lavar o cabelo após o tratamento?
               </h3>
               <p className="text-gray-600">
-                Recomendamos aguardar 24 horas antes de lavar o cabelo para permitir 
+                Recomendamos aguardar 24 horas antes de lavar o cabelo para permitir
                 a absorção completa dos ativos aplicados.
               </p>
             </div>
@@ -350,7 +350,7 @@ export default function MesoterapiaCapilar() {
               Pronto para revitalizar seus cabelos?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma avaliação tricológica e descubra como a mesoterapia capilar 
+              Agende uma avaliação tricológica e descubra como a mesoterapia capilar
               pode transformar a saúde e beleza dos seus cabelos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

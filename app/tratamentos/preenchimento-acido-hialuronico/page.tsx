@@ -82,7 +82,7 @@ export default function PreenchimentoAcidoHialuronico() {
                   Preenchimento com Ácido Hialurônico
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Restaura volume e hidratação, suavizando rugas e sulcos faciais para 
+                  Restaura volume e hidratação, suavizando rugas e sulcos faciais para
                   um aspecto mais jovem e natural com resultados imediatos.
                 </p>
               </div>
@@ -132,18 +132,18 @@ export default function PreenchimentoAcidoHialuronico() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  O ácido hialurônico é uma substância naturalmente presente em nosso organismo, 
-                  responsável pela hidratação e volume da pele. Quando aplicado como preenchimento, 
+                  O ácido hialurônico é uma substância naturalmente presente em nosso organismo,
+                  responsável pela hidratação e volume da pele. Quando aplicado como preenchimento,
                   restaura o volume perdido com o tempo e suaviza rugas e sulcos.
                 </p>
                 <p>
-                  Este tratamento é ideal para quem busca resultados imediatos e naturais, 
-                  proporcionando hidratação profunda e estimulando a produção natural de colágeno. 
+                  Este tratamento é ideal para quem busca resultados imediatos e naturais,
+                  proporcionando hidratação profunda e estimulando a produção natural de colágeno.
                   O produto é completamente biocompatível e absorvível pelo organismo.
                 </p>
                 <p>
-                  Além dos benefícios estéticos, o ácido hialurônico melhora significativamente 
-                  a qualidade da pele, proporcionando maior elasticidade, hidratação e luminosidade 
+                  Além dos benefícios estéticos, o ácido hialurônico melhora significativamente
+                  a qualidade da pele, proporcionando maior elasticidade, hidratação e luminosidade
                   natural que perdura por meses.
                 </p>
               </div>
@@ -266,7 +266,7 @@ export default function PreenchimentoAcidoHialuronico() {
                 Quanto tempo dura o preenchimento?
               </h3>
               <p className="text-gray-600">
-                A duração varia de 8 a 18 meses, dependendo da área tratada, densidade do produto 
+                A duração varia de 8 a 18 meses, dependendo da área tratada, densidade do produto
                 e características individuais do metabolismo.
               </p>
             </div>
@@ -275,7 +275,7 @@ export default function PreenchimentoAcidoHialuronico() {
                 O resultado é reversível?
               </h3>
               <p className="text-gray-600">
-                Sim, o ácido hialurônico pode ser dissolvido com hialuronidase se necessário, 
+                Sim, o ácido hialurônico pode ser dissolvido com hialuronidase se necessário,
                 oferecendo segurança adicional ao tratamento.
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function PreenchimentoAcidoHialuronico() {
                 Posso fazer maquiagem após o procedimento?
               </h3>
               <p className="text-gray-600">
-                Recomendamos aguardar 24 horas antes de aplicar maquiagem para evitar 
+                Recomendamos aguardar 24 horas antes de aplicar maquiagem para evitar
                 contaminação e permitir a cicatrização adequada.
               </p>
             </div>
@@ -300,7 +300,7 @@ export default function PreenchimentoAcidoHialuronico() {
               Pronto para restaurar o volume e hidratação da sua pele?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma consulta e descubra como o preenchimento com ácido hialurônico 
+              Agende uma consulta e descubra como o preenchimento com ácido hialurônico
               pode proporcionar resultados naturais e imediatos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

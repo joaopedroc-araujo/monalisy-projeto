@@ -24,7 +24,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
         <div className="space-y-24 lg:space-y-32">
           {professionals.map((professional, index) => {
             const isEven = index % 2 === 0;
-            
+
             return (
               <div key={professional.id} className="w-full">
                 {/* Layout para desktop */}
@@ -39,7 +39,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                         {professional.title}
                       </h3>
                     )}
-                    
+
                     {/* Descrição */}
                     <div className="space-y-4 text-gray-600 leading-relaxed">
                       {professional.description.map((paragraph, paragraphIndex) => (
@@ -48,7 +48,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                         </p>
                       ))}
                     </div>
-                    
+
                     {/* Formação e Especializações */}
                     <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 pt-6">
                       {/* Formação */}
@@ -62,7 +62,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                           </ul>
                         </div>
                       )}
-                      
+
                       {/* Especializações */}
                       {professional.specializations.length > 0 && (
                         <div className="min-h-[100px] flex flex-col">
@@ -89,7 +89,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                         priority={index === 0}
                       />
                     </div>
-                    
+
                     {/* Elemento decorativo */}
                     <div className={`absolute -bottom-6 w-24 h-24 xl:w-32 xl:h-32 2xl:w-40 2xl:h-40 bg-gray-100 rounded-2xl -z-10 ${
                       isEven ? '-right-6' : '-left-6'
@@ -111,7 +111,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                         priority={index === 0}
                       />
                     </div>
-                    
+
                     {/* Elemento decorativo */}
                     <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gray-100 rounded-2xl -z-10"></div>
                   </div>
@@ -128,7 +128,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                         </h3>
                       )}
                     </div>
-                    
+
                     {/* Descrição */}
                     <div className="space-y-4 text-gray-600 leading-relaxed">
                       {professional.description.map((paragraph, paragraphIndex) => (
@@ -137,7 +137,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                         </p>
                       ))}
                     </div>
-                    
+
                     {/* Formação e Especializações */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
                       {/* Formação */}
@@ -151,7 +151,7 @@ const ProfessionalSection = ({ professionals, className = '' }: ProfessionalSect
                           </ul>
                         </div>
                       )}
-                      
+
                       {/* Especializações */}
                       {professional.specializations.length > 0 && (
                         <div className="min-h-[80px] flex flex-col">

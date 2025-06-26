@@ -82,7 +82,7 @@ export default function DrenagemLinfatica() {
                   Drenagem Linfática
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Técnica que estimula o sistema linfático, reduzindo inchaço, melhorando a circulação 
+                  Técnica que estimula o sistema linfático, reduzindo inchaço, melhorando a circulação
                   e promovendo relaxamento profundo e bem-estar.
                 </p>
               </div>
@@ -132,18 +132,18 @@ export default function DrenagemLinfatica() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  A drenagem linfática é uma técnica de massagem suave que estimula o sistema 
-                  linfático, ajudando na eliminação de toxinas e redução do inchaço. É ideal 
+                  A drenagem linfática é uma técnica de massagem suave que estimula o sistema
+                  linfático, ajudando na eliminação de toxinas e redução do inchaço. É ideal
                   para pós-operatório, retenção de líquidos e como tratamento de bem-estar.
                 </p>
                 <p>
-                  Esta técnica utiliza movimentos específicos e pressão suave para direcionar 
-                  o fluxo da linfa em direção aos gânglios linfáticos, promovendo a eliminação 
+                  Esta técnica utiliza movimentos específicos e pressão suave para direcionar
+                  o fluxo da linfa em direção aos gânglios linfáticos, promovendo a eliminação
                   natural de líquidos e toxinas acumulados nos tecidos.
                 </p>
                 <p>
-                  Além dos benefícios estéticos, a drenagem linfática fortalece o sistema 
-                  imunológico, melhora a qualidade do sono e proporciona uma sensação profunda 
+                  Além dos benefícios estéticos, a drenagem linfática fortalece o sistema
+                  imunológico, melhora a qualidade do sono e proporciona uma sensação profunda
                   de relaxamento e bem-estar.
                 </p>
               </div>
@@ -216,7 +216,7 @@ export default function DrenagemLinfatica() {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Drenagem Manual</h3>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Técnica realizada exclusivamente com as mãos, utilizando movimentos específicos 
+                  Técnica realizada exclusivamente com as mãos, utilizando movimentos específicos
                   e pressão suave para estimular o sistema linfático.
                 </p>
                 <ul className="space-y-2">
@@ -239,7 +239,7 @@ export default function DrenagemLinfatica() {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Drenagem com Equipamentos</h3>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Utiliza equipamentos específicos que simulam os movimentos da drenagem manual, 
+                  Utiliza equipamentos específicos que simulam os movimentos da drenagem manual,
                   potencializando os resultados do tratamento.
                 </p>
                 <ul className="space-y-2">
@@ -339,7 +339,7 @@ export default function DrenagemLinfatica() {
                 Quantas sessões são recomendadas?
               </h3>
               <p className="text-gray-600">
-                Para manutenção, recomendamos sessões quinzenais ou mensais. Para pós-operatório, 
+                Para manutenção, recomendamos sessões quinzenais ou mensais. Para pós-operatório,
                 o protocolo é definido conforme orientação médica.
               </p>
             </div>
@@ -348,7 +348,7 @@ export default function DrenagemLinfatica() {
                 Posso fazer durante a gravidez?
               </h3>
               <p className="text-gray-600">
-                A drenagem linfática pode ser realizada durante a gravidez, mas sempre 
+                A drenagem linfática pode ser realizada durante a gravidez, mas sempre
                 com autorização médica e técnicas específicas para gestantes.
               </p>
             </div>
@@ -357,7 +357,7 @@ export default function DrenagemLinfatica() {
                 Há contraindicações?
               </h3>
               <p className="text-gray-600">
-                Sim, como infecções agudas, trombose, insuficiência cardíaca descompensada 
+                Sim, como infecções agudas, trombose, insuficiência cardíaca descompensada
                 e alguns tipos de câncer. Sempre consulte um profissional.
               </p>
             </div>
@@ -373,7 +373,7 @@ export default function DrenagemLinfatica() {
               Pronto para sentir os benefícios da drenagem linfática?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma sessão e experimente uma sensação única de relaxamento 
+              Agende uma sessão e experimente uma sensação única de relaxamento
               e bem-estar com nossa drenagem linfática especializada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

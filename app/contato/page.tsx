@@ -37,7 +37,7 @@ export default function Contato() {
               Entre em Contato
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Estamos prontos para atendê-lo e esclarecer suas dúvidas. 
+              Estamos prontos para atendê-lo e esclarecer suas dúvidas.
               Agende sua consulta e dê o primeiro passo para alcançar seus objetivos estéticos.
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function Contato() {
                   Preencha o formulário abaixo e nossa equipe entrará em contato para agendar sua consulta.
                 </p>
               </div>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -92,7 +92,7 @@ export default function Contato() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
@@ -129,7 +129,7 @@ export default function Contato() {
                     </select>
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
                     Mensagem
@@ -144,7 +144,7 @@ export default function Contato() {
                     placeholder="Conte-nos mais sobre seus objetivos e dúvidas..."
                   ></textarea>
                 </div>
-                
+
                 <button
                   type="submit"
                   className="w-full flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
@@ -162,7 +162,7 @@ export default function Contato() {
                   Informações de Contato
                 </h2>
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  Nossa equipe está sempre disponível para atendê-lo. Entre em contato através 
+                  Nossa equipe está sempre disponível para atendê-lo. Entre em contato através
                   dos canais abaixo ou visite nossa clínica.
                 </p>
               </div>

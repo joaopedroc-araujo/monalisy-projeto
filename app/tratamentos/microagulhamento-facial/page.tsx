@@ -87,7 +87,7 @@ export default function MicroagulhamentoFacial() {
                   Microagulhamento Facial
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Estimula a regeneração natural da pele melhorando cicatrizes, poros dilatados 
+                  Estimula a regeneração natural da pele melhorando cicatrizes, poros dilatados
                   e textura geral através de microlesões controladas.
                 </p>
               </div>
@@ -137,20 +137,20 @@ export default function MicroagulhamentoFacial() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  O microagulhamento facial é um procedimento que utiliza microagulhas para criar 
-                  microperfurações controladas na pele, estimulando a produção natural de colágeno 
-                  e elastina. É eficaz para tratar cicatrizes de acne, poros dilatados e melhorar 
+                  O microagulhamento facial é um procedimento que utiliza microagulhas para criar
+                  microperfurações controladas na pele, estimulando a produção natural de colágeno
+                  e elastina. É eficaz para tratar cicatrizes de acne, poros dilatados e melhorar
                   a textura geral da pele.
                 </p>
                 <p>
-                  Este tratamento ativa o processo natural de cicatrização da pele, promovendo 
-                  renovação celular e melhora significativa na qualidade da pele. As microlesões 
-                  controladas estimulam a formação de novo colágeno, resultando em pele mais 
+                  Este tratamento ativa o processo natural de cicatrização da pele, promovendo
+                  renovação celular e melhora significativa na qualidade da pele. As microlesões
+                  controladas estimulam a formação de novo colágeno, resultando em pele mais
                   firme, lisa e uniforme.
                 </p>
                 <p>
-                  Além dos benefícios regenerativos, o microagulhamento aumenta significativamente 
-                  a absorção de ativos aplicados durante e após o procedimento, potencializando 
+                  Além dos benefícios regenerativos, o microagulhamento aumenta significativamente
+                  a absorção de ativos aplicados durante e após o procedimento, potencializando
                   os resultados do tratamento.
                 </p>
               </div>
@@ -320,7 +320,7 @@ export default function MicroagulhamentoFacial() {
                 Quantas sessões são necessárias?
               </h3>
               <p className="text-gray-600">
-                Geralmente recomendamos de 3 a 6 sessões, com intervalos de 30 dias, 
+                Geralmente recomendamos de 3 a 6 sessões, com intervalos de 30 dias,
                 dependendo da condição da pele e objetivos do tratamento.
               </p>
             </div>
@@ -329,7 +329,7 @@ export default function MicroagulhamentoFacial() {
                 O procedimento é doloroso?
               </h3>
               <p className="text-gray-600">
-                Com anestésico tópico, o desconforto é mínimo. A sensação é similar 
+                Com anestésico tópico, o desconforto é mínimo. A sensação é similar
                 a uma lixa suave passando pela pele.
               </p>
             </div>
@@ -338,7 +338,7 @@ export default function MicroagulhamentoFacial() {
                 Posso fazer no verão?
               </h3>
               <p className="text-gray-600">
-                Sim, mas é fundamental usar protetor solar rigorosamente e evitar 
+                Sim, mas é fundamental usar protetor solar rigorosamente e evitar
                 exposição solar direta nas primeiras semanas.
               </p>
             </div>
@@ -354,7 +354,7 @@ export default function MicroagulhamentoFacial() {
               Pronto para renovar sua pele?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma consulta e descubra como o microagulhamento pode melhorar 
+              Agende uma consulta e descubra como o microagulhamento pode melhorar
               a textura e qualidade da sua pele de forma natural.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

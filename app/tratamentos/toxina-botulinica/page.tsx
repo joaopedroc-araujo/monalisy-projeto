@@ -80,7 +80,7 @@ export default function ToxinaBotulinica() {
                   Toxina Botulínica
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Tratamento para suavizar rugas de expressão e prevenir o envelhecimento, 
+                  Tratamento para suavizar rugas de expressão e prevenir o envelhecimento,
                   proporcionando uma aparência mais jovem e descansada de forma natural.
                 </p>
               </div>
@@ -130,18 +130,18 @@ export default function ToxinaBotulinica() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  A toxina botulínica é um tratamento seguro e eficaz para suavizar rugas dinâmicas 
-                  causadas pela contração muscular repetitiva. É ideal para tratar rugas da testa, 
+                  A toxina botulínica é um tratamento seguro e eficaz para suavizar rugas dinâmicas
+                  causadas pela contração muscular repetitiva. É ideal para tratar rugas da testa,
                   pés de galinha e glabela, proporcionando um aspecto mais jovem e descansado.
                 </p>
                 <p>
-                  O procedimento atua bloqueando temporariamente os sinais nervosos que causam a 
-                  contração muscular, permitindo que a pele se relaxe e as rugas se suavizem. 
+                  O procedimento atua bloqueando temporariamente os sinais nervosos que causam a
+                  contração muscular, permitindo que a pele se relaxe e as rugas se suavizem.
                   Os resultados são naturais e preservam a expressividade facial.
                 </p>
                 <p>
-                  Além do efeito estético, a toxina botulínica também pode ser utilizada para 
-                  tratar condições como bruxismo, sorriso gengival e hiperidrose, oferecendo 
+                  Além do efeito estético, a toxina botulínica também pode ser utilizada para
+                  tratar condições como bruxismo, sorriso gengival e hiperidrose, oferecendo
                   benefícios funcionais importantes.
                 </p>
               </div>
@@ -249,7 +249,7 @@ export default function ToxinaBotulinica() {
                 A toxina botulínica é segura?
               </h3>
               <p className="text-gray-600">
-                Sim, quando aplicada por profissionais qualificados. É um tratamento aprovado 
+                Sim, quando aplicada por profissionais qualificados. É um tratamento aprovado
                 pela ANVISA e amplamente utilizado na medicina estética há décadas.
               </p>
             </div>
@@ -258,7 +258,7 @@ export default function ToxinaBotulinica() {
                 O rosto fica `&quot;congelado&quot;`?
               </h3>
               <p className="text-gray-600">
-                Não, quando aplicada corretamente, a toxina botulínica preserva a expressividade 
+                Não, quando aplicada corretamente, a toxina botulínica preserva a expressividade
                 natural, apenas suavizando as rugas de expressão.
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function ToxinaBotulinica() {
                 Posso fazer exercícios após o tratamento?
               </h3>
               <p className="text-gray-600">
-                Recomendamos evitar exercícios intensos nas primeiras 24 horas para garantir 
+                Recomendamos evitar exercícios intensos nas primeiras 24 horas para garantir
                 a fixação adequada do produto.
               </p>
             </div>
@@ -283,7 +283,7 @@ export default function ToxinaBotulinica() {
               Pronto para suavizar suas rugas de expressão?
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma consulta e descubra como a toxina botulínica pode proporcionar 
+              Agende uma consulta e descubra como a toxina botulínica pode proporcionar
               uma aparência mais jovem e descansada de forma natural.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
