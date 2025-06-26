@@ -14,7 +14,6 @@ export default function Contato() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você implementaria o envio do formulário
     console.log('Form submitted:', formData);
     alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
     setFormData({ name: '', email: '', phone: '', treatment: '', message: '' });
@@ -258,11 +257,16 @@ export default function Contato() {
             </p>
           </div>
           <div className="aspect-video bg-gray-300 rounded-2xl flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <MapPin className="w-12 h-12 mx-auto mb-4" />
-              <p className="text-lg font-medium">Mapa da Localização</p>
-              <p className="text-sm">Integração com Google Maps</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1325.794697002969!2d-44.19739944766124!3d-19.970131989849698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c391895afe2b%3A0x1602e6d2425a1bca!2sDra.%20Monalisy%20Rodrigues!5e0!3m2!1sen!2sbr!4v1750768298613!5m2!1sen!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Monalisy Rodrigues"
+            />
           </div>
         </div>
       </section>
