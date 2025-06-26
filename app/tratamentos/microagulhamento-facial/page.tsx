@@ -54,7 +54,7 @@ export default function MicroagulhamentoFacial() {
   ];
 
   return (
-    <div className="pt-20 lg:pt-24">
+    <div className="pt-8 lg:pt-12">
       {/* Breadcrumb */}
       <section className="py-4 bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

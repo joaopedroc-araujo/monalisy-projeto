@@ -103,7 +103,7 @@ export default function Tratamentos() {
     : treatments.filter(treatment => treatment.category === selectedCategory);
 
   return (
-    <div className="pt-20 lg:pt-24">
+    <div className="pt-8 lg:pt-12">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
