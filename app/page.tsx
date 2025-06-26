@@ -151,9 +151,11 @@ export default function Home() {
               <div key={index} className="group">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                   <div className="aspect-video overflow-hidden bg-gray-100">
-                    <img
+                    <Image
                       src={treatment.image}
                       alt={treatment.title}
+                      width={800}
+                      height={450}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

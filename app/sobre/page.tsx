@@ -1,4 +1,5 @@
 import { Award, Users, Heart, Target } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Sobre() {
   const values = [
@@ -37,23 +38,21 @@ export default function Sobre() {
                   <span className="text-gray-600"> Monalisy Rodrigues</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Uma clínica dedicada à medicina estética com foco na excelência, 
+                  Uma clínica dedicada à medicina estética com foco na excelência,
                   segurança e resultados naturais que realçam a beleza única de cada paciente.
                 </p>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
-              <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1325.794697002969!2d-44.19739944766124!3d-19.970131989849698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c391895afe2b%3A0x1602e6d2425a1bca!2sDra.%20Monalisy%20Rodrigues!5e0!3m2!1sen!2sbr!4v1750768298613!5m2!1sen!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Clínica Monalisy Rodrigues"
-              />
+                <Image
+                  src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(40).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDApLmpwZyIsImlhdCI6MTc1MDg5NDc5OSwiZXhwIjo0OTA0NDk0Nzk5fQ.itpgHu3pg9D1kLaLrjcI4_OyF0DBWGAqnwnVmNUoato"
+                  alt="Clínica Monalisy Rodrigues"
+                  width={500}
+                  height={500}
+                  priority
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -67,24 +66,24 @@ export default function Sobre() {
             <div className="text-center">
               <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Missão</h3>
               <p className="text-gray-600 leading-relaxed">
-                Proporcionar tratamentos estéticos de alta qualidade, combinando tecnologia 
-                avançada com cuidado humanizado, para realçar a beleza natural e promover 
+                Proporcionar tratamentos estéticos de alta qualidade, combinando tecnologia
+                avançada com cuidado humanizado, para realçar a beleza natural e promover
                 o bem-estar de nossos pacientes.
               </p>
             </div>
             <div className="text-center">
               <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Visão</h3>
               <p className="text-gray-600 leading-relaxed">
-                Ser reconhecida como referência em medicina estética, destacando-se pela 
-                excelência técnica, inovação e resultados naturais que respeitam a 
+                Ser reconhecida como referência em medicina estética, destacando-se pela
+                excelência técnica, inovação e resultados naturais que respeitam a
                 individualidade de cada paciente.
               </p>
             </div>
             <div className="text-center">
               <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Valores</h3>
               <p className="text-gray-600 leading-relaxed">
-                Ética, transparência, segurança, excelência técnica e cuidado humanizado 
-                são os pilares que orientam nossa prática médica e nosso relacionamento 
+                Ética, transparência, segurança, excelência técnica e cuidado humanizado
+                são os pilares que orientam nossa prática médica e nosso relacionamento
                 com cada paciente.
               </p>
             </div>
@@ -100,7 +99,7 @@ export default function Sobre() {
               Nossos Diferenciais
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              O que nos torna únicos na área de medicina estética e como nos comprometemos 
+              O que nos torna únicos na área de medicina estética e como nos comprometemos
               com a excelência em cada atendimento.
             </p>
           </div>
@@ -132,18 +131,18 @@ export default function Sobre() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Médica especializada em medicina estética com vasta experiência em procedimentos 
-                  faciais, corporais e capilares. Graduada em Medicina e especializada em 
+                  Médica especializada em medicina estética com vasta experiência em procedimentos
+                  faciais, corporais e capilares. Graduada em Medicina e especializada em
                   Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.
                 </p>
                 <p>
-                  Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na 
-                  área estética, participando regularmente de congressos e cursos de atualização 
+                  Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na
+                  área estética, participando regularmente de congressos e cursos de atualização
                   para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.
                 </p>
                 <p>
-                  Sua filosofia de trabalho baseia-se na valorização da beleza natural, 
-                  respeitando as características individuais e promovendo resultados harmoniosos 
+                  Sua filosofia de trabalho baseia-se na valorização da beleza natural,
+                  respeitando as características individuais e promovendo resultados harmoniosos
                   e naturais através de técnicas minimamente invasivas.
                 </p>
               </div>
@@ -168,10 +167,13 @@ export default function Sobre() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                <img
+                <Image
                   src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8"
                   alt="Dra. Monalisy Rodrigues"
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover object-center"
+                  
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gray-100 rounded-2xl -z-10"></div>
@@ -188,7 +190,7 @@ export default function Sobre() {
               Tecnologia e Equipamentos
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Investimos constantemente em tecnologia de ponta para oferecer os melhores 
+              Investimos constantemente em tecnologia de ponta para oferecer os melhores
               resultados com máxima segurança e conforto.
             </p>
           </div>
@@ -198,7 +200,7 @@ export default function Sobre() {
                 Equipamentos Modernos
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Utilizamos apenas equipamentos certificados e de última geração, 
+                Utilizamos apenas equipamentos certificados e de última geração,
                 garantindo eficácia e segurança em todos os procedimentos.
               </p>
             </div>
@@ -207,7 +209,7 @@ export default function Sobre() {
                 Protocolos Rigorosos
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Seguimos protocolos internacionais de segurança e higiene, 
+                Seguimos protocolos internacionais de segurança e higiene,
                 assegurando o mais alto padrão de qualidade em nossos atendimentos.
               </p>
             </div>
@@ -216,7 +218,7 @@ export default function Sobre() {
                 Ambiente Seguro
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Nossa clínica oferece um ambiente totalmente seguro e confortável, 
+                Nossa clínica oferece um ambiente totalmente seguro e confortável,
                 projetado para proporcionar tranquilidade durante os tratamentos.
               </p>
             </div>
