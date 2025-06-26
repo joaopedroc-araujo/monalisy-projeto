@@ -255,7 +255,7 @@ export default function ToxinaBotulinica() {
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                O rosto fica "congelado"?
+                O rosto fica `&quot;congelado&quot;`?
               </h3>
               <p className="text-gray-600">
                 Não, quando aplicada corretamente, a toxina botulínica preserva a expressividade 

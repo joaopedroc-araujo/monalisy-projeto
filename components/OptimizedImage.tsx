@@ -72,7 +72,7 @@ const OptimizedImage = memo(({
       {isLoading && (
         <div className={`absolute inset-0 bg-gray-200 animate-pulse ${className}`} />
       )}
-      <Image {...imageProps} />
+      <Image {...imageProps} alt={imageProps.alt} />
     </div>
   );
 });

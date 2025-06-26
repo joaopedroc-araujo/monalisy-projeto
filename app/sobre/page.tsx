@@ -1,3 +1,4 @@
+import ProfessionalSection from '@/components/ProfessionalSection';
 import { Award, Users, Heart, Target } from 'lucide-react';
 import Image from 'next/image';
 
@@ -23,6 +24,39 @@ export default function Sobre() {
       title: 'Resultados Naturais',
       description: 'Focamos em realçar a beleza natural de cada paciente, respeitando suas características únicas.'
     }
+  ];
+
+  // Array de profissionais - você pode adicionar quantos quiser
+  const professionals = [
+    {
+      id: 'monalisy-rodrigues',
+      name: 'Dra. Monalisy Rodrigues',
+      title: 'Médica Especialista em Medicina Estética',
+      description: [
+        "Monalisy Rodrigues, médica, Graduada pela Universidade Gama Filho, na cidade do Rio de Janeiro/ RJ, em agosto de 2001. Após conclusão do curso de Medicina, foi para Belo Horizonte/MG, onde fez residência em Clínica Médica, em seguida concluiu Pós-Graduação em Dermatologia e Medicina Estética pela Sociedade Brasileira de Medicina Estética (SBME), com sede no Rio de Janeiro/RJ. Quando estudante foi acadêmica no ambulatório de dermatologia da Santa Casa de Misericórdia do Rio de Janeiro/RJ, no serviço do Professor Azzulay. Após conclusão do curso de medicina, mudou-se para a Capital Mineira, onde exercendo a clínica médica, em meio a casos, dores e histórias pessoais, encontrou uma paixão pela Dermatologia, quando ao cuidar de uma paciente, observou uma evolução na auto-estima após a cura da patologia dermatológica e sua melhora estética. Assim, foi se aperfeiçoar na Medicina Estética, e essa junção proporcionou o cuidado ao ser humano por inteiro, alma e físico, refletindo de forma positiva nas relações interpessoais e com o mundo.Diante a tamanha dedicação à Dermatologia e Medicina Estética, tornou-se Preceptora no ambulatório de Peellings Químicos da SBME, e no Instituto Superior de Medicina e Dermatologia, ministrou aulas práticas de Lasers e tecnologias. Devido a toda trajetória em meio a estudos, trabalhos, e pessoas sobrevieram descobertas, hoje proprietária da clínica que tem como a marca seu próprio nome, Monalisy Rodrigues, sendo a concretização de um sonho."
+      ],
+      image: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8',
+      education: [
+        'Medicina - Universidade Federal',
+        'Especialização em Dermatologia',
+        'Pós-graduação em Medicina Estética'
+      ],
+      specializations: [
+        'Harmonização Facial',
+        'Rejuvenescimento',
+        'Tratamentos Corporais'
+      ]
+    }
+    // Você pode adicionar mais profissionais aqui seguindo a mesma estrutura
+    // {
+    //   id: 'outro-medico',
+    //   name: 'Dr. Outro Médico',
+    //   title: 'Especialista em...',
+    //   description: ['Parágrafo 1', 'Parágrafo 2'],
+    //   image: 'url-da-imagem',
+    //   education: ['Formação 1', 'Formação 2'],
+    //   specializations: ['Especialização 1', 'Especialização 2']
+    // }
   ];
 
   return (
@@ -122,65 +156,7 @@ export default function Sobre() {
       </section>
 
       {/* Professional Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900">
-                Dra. Monalisy Rodrigues
-              </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  Médica especializada em medicina estética com vasta experiência em procedimentos
-                  faciais, corporais e capilares. Graduada em Medicina e especializada em
-                  Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.
-                </p>
-                <p>
-                  Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na
-                  área estética, participando regularmente de congressos e cursos de atualização
-                  para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.
-                </p>
-                <p>
-                  Sua filosofia de trabalho baseia-se na valorização da beleza natural,
-                  respeitando as características individuais e promovendo resultados harmoniosos
-                  e naturais através de técnicas minimamente invasivas.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 gap-6 pt-6">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Formação</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Medicina - Universidade Federal</li>
-                    <li>• Especialização em Dermatologia</li>
-                    <li>• Pós-graduação em Medicina Estética</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Especializações</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Harmonização Facial</li>
-                    <li>• Rejuvenescimento</li>
-                    <li>• Tratamentos Corporais</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                <Image
-                  src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8"
-                  alt="Dra. Monalisy Rodrigues"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover object-center"
-                  
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gray-100 rounded-2xl -z-10"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProfessionalSection professionals={professionals} />
 
       {/* Technology Section */}
       <section className="py-20 bg-gray-50">
