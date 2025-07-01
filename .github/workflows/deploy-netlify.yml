@@ -17,11 +17,29 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Debug Netlify secrets
+        run: |
+          if [ -z "${NETLIFY_AUTH_TOKEN}" ]; then
+            echo "NETLIFY_AUTH_TOKEN está VAZIO"
+          else
+            echo "NETLIFY_AUTH_TOKEN está DEFINIDO"
+          fi
+          if [ -z "${NETLIFY_SITE_ID}" ]; then
+            echo "NETLIFY_SITE_ID está VAZIO"
+          else
+            echo "NETLIFY_SITE_ID está DEFINIDO"
+          fi
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: './out'
           production-branch: dev
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
