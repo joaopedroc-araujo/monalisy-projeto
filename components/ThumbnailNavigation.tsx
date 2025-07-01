@@ -177,23 +177,23 @@ const ThumbnailNavigation = memo(({
   // Keyboard navigation
   const handleKeyDown = useCallback((e: React.KeyboardEvent, index: number) => {
     switch (e.key) {
-      case 'Enter':
-      case ' ':
-        e.preventDefault();
-        onImageSelect(index);
-        break;
-      case 'ArrowLeft':
-        e.preventDefault();
-        if (index > 0) {
-          onImageSelect(index - 1);
-        }
-        break;
-      case 'ArrowRight':
-        e.preventDefault();
-        if (index < images.length - 1) {
-          onImageSelect(index + 1);
-        }
-        break;
+    case 'Enter':
+    case ' ':
+      e.preventDefault();
+      onImageSelect(index);
+      break;
+    case 'ArrowLeft':
+      e.preventDefault();
+      if (index > 0) {
+        onImageSelect(index - 1);
+      }
+      break;
+    case 'ArrowRight':
+      e.preventDefault();
+      if (index < images.length - 1) {
+        onImageSelect(index + 1);
+      }
+      break;
     }
   }, [onImageSelect, images.length]);
 
@@ -218,7 +218,7 @@ const ThumbnailNavigation = memo(({
 
   // Render thumbnails
   const renderThumbnails = () => {
-    const thumbnailsToRender = enableVirtualization ? virtualization.virtualItems : 
+    const thumbnailsToRender = enableVirtualization ? virtualization.virtualItems :
       images.map((_, index) => ({ index, start: index * (thumbnailSize + gap), size: thumbnailSize }));
 
     return thumbnailsToRender.map(({ index }) => {
@@ -227,7 +227,6 @@ const ThumbnailNavigation = memo(({
 
       const isActive = index === currentIndex;
       const isLastVisible = shouldShowOverlay && index === visibleThumbnailCount - 1;
-      const showOverlayOnThis = isLastVisible && remainingCount > 0;
       const hasError = thumbnailErrors.has(index);
 
       return (
@@ -239,9 +238,9 @@ const ThumbnailNavigation = memo(({
             relative flex-shrink-0 transition-all duration-300 rounded-xl overflow-hidden
             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900
             ${isActive
-              ? 'ring-3 ring-gray-900 ring-offset-2 scale-105 shadow-lg'
-              : 'ring-2 ring-gray-200 hover:ring-gray-400 opacity-70 hover:opacity-100 hover:scale-102 shadow-sm hover:shadow-md'
-            }
+          ? 'ring-3 ring-gray-900 ring-offset-2 scale-105 shadow-lg'
+          : 'ring-2 ring-gray-200 hover:ring-gray-400 opacity-70 hover:opacity-100 hover:scale-102 shadow-sm hover:shadow-md'
+        }
           `}
           style={{
             width: thumbnailSize,
@@ -275,7 +274,7 @@ const ThumbnailNavigation = memo(({
               unoptimized={true} // Temporary fix for external URLs
             />
           )}
-          
+
           {/* Active indicator */}
           {isActive && !hasError && (
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
@@ -288,13 +287,13 @@ const ThumbnailNavigation = memo(({
   };
 
   const canScrollLeft = scrollPosition > 0;
-  const canScrollRight = containerRef.current ? 
+  const canScrollRight = containerRef.current ?
     scrollPosition < (containerRef.current.scrollWidth - containerRef.current.clientWidth) : false;
 
   return (
     <div className={`relative ${className}`} role="region" aria-label="Navegação de miniaturas">
       {/* Scroll buttons */}
-      {showScrollButtons && screenSize !== 'mobile' && (
+      {showScrollButtons && screenSize === 'mobile' && (
         <>
           <button
             onClick={() => scrollThumbnails('left')}
@@ -333,12 +332,12 @@ const ThumbnailNavigation = memo(({
           ref={containerRef}
           className={`
             flex gap-3 py-4 transition-all duration-300
-            ${screenSize === 'mobile' 
-              ? 'overflow-x-auto scrollbar-hide px-4' 
-              : screenSize === 'tablet'
-              ? 'justify-center px-8'
-              : 'overflow-x-auto scrollbar-hide px-12'
-            }
+            ${screenSize === 'mobile'
+      ? 'overflow-x-auto scrollbar-hide px-4'
+      : screenSize === 'tablet'
+        ? 'justify-center px-8'
+        : 'overflow-x-auto scrollbar-hide px-12'
+    }
           `}
           style={{
             scrollbarWidth: 'none',

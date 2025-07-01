@@ -63,9 +63,6 @@ const ResponsiveImageGallery = memo(({
     }
   }, [images.length]);
 
-  // Debounced navigation for performance
-  const debouncedGoToImage = useDebounce(goToImage, 100);
-
   // Auto-play functionality
   useEffect(() => {
     if (!isPlaying || isHovered || images.length <= 1) return;
@@ -78,22 +75,22 @@ const ResponsiveImageGallery = memo(({
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       switch (e.key) {
-        case 'ArrowLeft':
-          e.preventDefault();
-          prevImage();
-          break;
-        case 'ArrowRight':
-          e.preventDefault();
-          nextImage();
-          break;
-        case ' ':
-          e.preventDefault();
-          setIsPlaying(!isPlaying);
-          break;
-        case 'Escape':
-          e.preventDefault();
-          setIsPlaying(false);
-          break;
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevImage();
+        break;
+      case 'ArrowRight':
+        e.preventDefault();
+        nextImage();
+        break;
+      case ' ':
+        e.preventDefault();
+        setIsPlaying(!isPlaying);
+        break;
+      case 'Escape':
+        e.preventDefault();
+        setIsPlaying(false);
+        break;
       }
     };
 
@@ -115,7 +112,7 @@ const ResponsiveImageGallery = memo(({
 
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
-    
+
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
@@ -170,7 +167,7 @@ const ResponsiveImageGallery = memo(({
   return (
     <div className={`w-full ${className}`}>
       {/* Main Gallery Container */}
-      <div 
+      <div
         className="relative group"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -182,7 +179,7 @@ const ResponsiveImageGallery = memo(({
         aria-live="polite"
       >
         {/* Main Image Container */}
-        <div className="relative h-[50vh] sm:h-[60vh] min-h-[400px] sm:min-h-[500px] rounded-2xl overflow-hidden bg-gray-100 shadow-2xl">
+        <div className="relative aspect-video rounded-2xl overflow-hidden bg-gray-100 shadow-2xl">
           {/* Loading indicator */}
           {isLoading && (
             <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center z-10">
@@ -194,7 +191,7 @@ const ResponsiveImageGallery = memo(({
           {images.map((image, index) => {
             const hasError = imageErrors.has(index);
             const isCurrentImage = index === currentImage;
-            
+
             return (
               <div
                 key={`${image.id}-${index}`}
@@ -227,10 +224,10 @@ const ResponsiveImageGallery = memo(({
                       onError={() => handleImageError(index)}
                       unoptimized={true} // Temporary fix for external URLs
                     />
-                    
+
                     {/* Gradient Overlay for Caption */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                    
+
                     {/* Caption */}
                     {image.caption && (
                       <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 z-30">
@@ -305,7 +302,7 @@ const ResponsiveImageGallery = memo(({
           <ThumbnailNavigation
             images={images}
             currentIndex={currentImage}
-            onImageSelect={debouncedGoToImage}
+            onImageSelect={goToImage}
             className="mt-6 sm:mt-8"
             thumbnailSize={thumbnailSize}
             enableVirtualization={enableVirtualization}
@@ -323,9 +320,9 @@ const ResponsiveImageGallery = memo(({
                   h-1 rounded-full transition-all duration-300 focus:outline-none
                   focus:ring-2 focus:ring-gray-900 focus:ring-offset-2
                   ${index === currentImage
-                    ? 'w-6 sm:w-8 bg-gray-900'
-                    : 'w-2 bg-gray-300 hover:bg-gray-400'
-                  }
+                ? 'w-6 sm:w-8 bg-gray-900'
+                : 'w-2 bg-gray-300 hover:bg-gray-400'
+              }
                 `}
                 role="tab"
                 aria-selected={index === currentImage}
