@@ -1,10 +1,9 @@
-'use client';
+"use client";
 
-import { useState, useCallback, useEffect, memo, useMemo } from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
-import Image from 'next/image';
-import ThumbnailNavigation from './ThumbnailNavigation';
-import { useDebounce } from '@/hooks/useDebounce';
+import { useState, useCallback, useEffect, memo, useMemo } from "react";
+import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+import Image from "next/image";
+import ThumbnailNavigation from "./ThumbnailNavigation";
 
 interface GalleryImage {
   id: number;
@@ -32,7 +31,7 @@ const ResponsiveImageGallery = memo(({
   showThumbnails = true,
   showControls = true,
   showProgressIndicators = true,
-  className = '',
+  className = "",
   thumbnailSize = 80,
   enableVirtualization = false
 }: ResponsiveImageGalleryProps) => {
@@ -75,27 +74,27 @@ const ResponsiveImageGallery = memo(({
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       switch (e.key) {
-      case 'ArrowLeft':
+      case "ArrowLeft":
         e.preventDefault();
         prevImage();
         break;
-      case 'ArrowRight':
+      case "ArrowRight":
         e.preventDefault();
         nextImage();
         break;
-      case ' ':
+      case " ":
         e.preventDefault();
         setIsPlaying(!isPlaying);
         break;
-      case 'Escape':
+      case "Escape":
         e.preventDefault();
         setIsPlaying(false);
         break;
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [nextImage, prevImage, isPlaying]);
 
   // Touch/swipe handling
@@ -196,7 +195,7 @@ const ResponsiveImageGallery = memo(({
               <div
                 key={`${image.id}-${index}`}
                 className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  isCurrentImage ? 'opacity-100 z-20' : 'opacity-0 z-10'
+                  isCurrentImage ? "opacity-100 z-20" : "opacity-0 z-10"
                 }`}
                 aria-hidden={!isCurrentImage}
               >
@@ -206,7 +205,7 @@ const ResponsiveImageGallery = memo(({
                     <div className="text-gray-400 text-center">
                       <div className="text-lg mb-2">Erro ao carregar imagem</div>
                       <div className="text-sm opacity-75">
-                        {image.alt || 'Imagem não disponível'}
+                        {image.alt || "Imagem não disponível"}
                       </div>
                     </div>
                   </div>
@@ -253,7 +252,7 @@ const ResponsiveImageGallery = memo(({
                   w-10 h-10 sm:w-12 sm:h-12 bg-white/20 hover:bg-white/30 text-white
                   rounded-full flex items-center justify-center transition-all duration-300
                   backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50
-                  ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}
+                  ${isHovered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}
                 `}
                 aria-label="Imagem anterior"
               >
@@ -268,7 +267,7 @@ const ResponsiveImageGallery = memo(({
                   w-10 h-10 sm:w-12 sm:h-12 bg-white/20 hover:bg-white/30 text-white
                   rounded-full flex items-center justify-center transition-all duration-300
                   backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50
-                  ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}
+                  ${isHovered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}
                 `}
                 aria-label="Próxima imagem"
               >
@@ -283,9 +282,9 @@ const ResponsiveImageGallery = memo(({
                   w-8 h-8 sm:w-10 sm:h-10 bg-white/20 hover:bg-white/30 text-white
                   rounded-full flex items-center justify-center transition-all duration-300
                   backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50
-                  ${isHovered ? 'opacity-100' : 'opacity-0'}
+                  ${isHovered ? "opacity-100" : "opacity-0"}
                 `}
-                aria-label={isPlaying ? 'Pausar apresentação' : 'Iniciar apresentação'}
+                aria-label={isPlaying ? "Pausar apresentação" : "Iniciar apresentação"}
               >
                 {isPlaying ? (
                   <Pause className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -320,8 +319,8 @@ const ResponsiveImageGallery = memo(({
                   h-1 rounded-full transition-all duration-300 focus:outline-none
                   focus:ring-2 focus:ring-gray-900 focus:ring-offset-2
                   ${index === currentImage
-                ? 'w-6 sm:w-8 bg-gray-900'
-                : 'w-2 bg-gray-300 hover:bg-gray-400'
+                ? "w-6 sm:w-8 bg-gray-900"
+                : "w-2 bg-gray-300 hover:bg-gray-400"
               }
                 `}
                 role="tab"
@@ -336,6 +335,6 @@ const ResponsiveImageGallery = memo(({
   );
 });
 
-ResponsiveImageGallery.displayName = 'ResponsiveImageGallery';
+ResponsiveImageGallery.displayName = "ResponsiveImageGallery";
 
 export default ResponsiveImageGallery;

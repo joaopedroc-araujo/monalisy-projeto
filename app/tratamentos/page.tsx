@@ -30,26 +30,6 @@ export default function Tratamentos() {
       href: "/tratamentos/toxina-botulinica"
     },
     {
-      id: "preenchimento-acido-hialuronico",
-      title: "Preenchimento com Ácido Hialurônico",
-      category: "facial",
-      description: "Restaura volume e hidratação, suavizando rugas e sulcos faciais para um aspecto mais jovem e natural.",
-      duration: "45-60 min",
-      price: "A partir de R$ 700",
-      image: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800",
-      href: "/tratamentos/preenchimento-acido-hialuronico"
-    },
-    {
-      id: "microagulhamento-facial",
-      title: "Microagulhamento Facial",
-      category: "facial",
-      description: "Estimula a regeneração natural da pele melhorando cicatrizes, poros dilatados e textura geral da pele.",
-      duration: "60-75 min",
-      price: "A partir de R$ 350",
-      image: "https://images.pexels.com/photos/3985336/pexels-photo-3985336.jpeg?auto=compress&cs=tinysrgb&w=800",
-      href: "/tratamentos/microagulhamento-facial"
-    },
-    {
       id: "criolipolise",
       title: "Criolipólise",
       category: "corporal",

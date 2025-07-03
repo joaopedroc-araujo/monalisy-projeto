@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { memo, useCallback, useEffect, useRef, useState, useMemo } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
-import { useDebounce } from '@/hooks/useDebounce';
-import { useVirtualization } from '@/hooks/useVirtualization';
+import { memo, useCallback, useEffect, useRef, useState, useMemo } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import { useDebounce } from "@/hooks/useDebounce";
+import { useVirtualization } from "@/hooks/useVirtualization";
 
 interface GalleryImage {
   id: number;
@@ -29,7 +29,7 @@ const ThumbnailNavigation = memo(({
   images,
   currentIndex,
   onImageSelect,
-  className = '',
+  className = "",
   thumbnailSize = 80,
   gap = 12,
   showScrollButtons = true,
@@ -41,7 +41,7 @@ const ThumbnailNavigation = memo(({
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState(0);
-  const [screenSize, setScreenSize] = useState<'mobile' | 'tablet' | 'desktop'>('desktop');
+  const [screenSize, setScreenSize] = useState<"mobile" | "tablet" | "desktop">("desktop");
   const [thumbnailErrors, setThumbnailErrors] = useState<Set<number>>(new Set());
 
   // Calculate visible thumbnails based on container width
@@ -53,7 +53,7 @@ const ThumbnailNavigation = memo(({
 
   // Determine if we should show the +X overlay
   const shouldShowOverlay = useMemo(() => {
-    return screenSize === 'mobile' && images.length > visibleThumbnailCount;
+    return screenSize === "mobile" && images.length > visibleThumbnailCount;
   }, [screenSize, images.length, visibleThumbnailCount]);
 
   // Calculate remaining images for overlay
@@ -74,11 +74,11 @@ const ThumbnailNavigation = memo(({
   const updateScreenSize = useCallback(() => {
     const width = window.innerWidth;
     if (width < 640) {
-      setScreenSize('mobile');
+      setScreenSize("mobile");
     } else if (width < 1024) {
-      setScreenSize('tablet');
+      setScreenSize("tablet");
     } else {
-      setScreenSize('desktop');
+      setScreenSize("desktop");
     }
   }, []);
 
@@ -98,11 +98,11 @@ const ThumbnailNavigation = memo(({
     updateScreenSize();
 
     const handleResize = () => updateScreenSize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       resizeObserver.disconnect();
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, [updateScreenSize]);
 
@@ -122,7 +122,7 @@ const ThumbnailNavigation = memo(({
 
     container.scrollTo({
       left: targetScrollLeft,
-      behavior: 'smooth'
+      behavior: "smooth"
     });
 
     setScrollPosition(targetScrollLeft);
@@ -143,16 +143,16 @@ const ThumbnailNavigation = memo(({
   }, [debouncedScrollHandler]);
 
   // Scroll navigation
-  const scrollThumbnails = useCallback((direction: 'left' | 'right') => {
+  const scrollThumbnails = useCallback((direction: "left" | "right") => {
     if (!containerRef.current) return;
 
     const container = containerRef.current;
     const scrollAmount = (thumbnailSize + gap) * 3; // Scroll 3 thumbnails at a time
-    const newScrollLeft = container.scrollLeft + (direction === 'right' ? scrollAmount : -scrollAmount);
+    const newScrollLeft = container.scrollLeft + (direction === "right" ? scrollAmount : -scrollAmount);
 
     container.scrollTo({
       left: newScrollLeft,
-      behavior: 'smooth'
+      behavior: "smooth"
     });
   }, [thumbnailSize, gap]);
 
@@ -177,18 +177,18 @@ const ThumbnailNavigation = memo(({
   // Keyboard navigation
   const handleKeyDown = useCallback((e: React.KeyboardEvent, index: number) => {
     switch (e.key) {
-    case 'Enter':
-    case ' ':
+    case "Enter":
+    case " ":
       e.preventDefault();
       onImageSelect(index);
       break;
-    case 'ArrowLeft':
+    case "ArrowLeft":
       e.preventDefault();
       if (index > 0) {
         onImageSelect(index - 1);
       }
       break;
-    case 'ArrowRight':
+    case "ArrowRight":
       e.preventDefault();
       if (index < images.length - 1) {
         onImageSelect(index + 1);
@@ -238,8 +238,8 @@ const ThumbnailNavigation = memo(({
             relative flex-shrink-0 transition-all duration-300 rounded-xl overflow-hidden
             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900
             ${isActive
-          ? 'ring-3 ring-gray-900 ring-offset-2 scale-105 shadow-lg'
-          : 'ring-2 ring-gray-200 hover:ring-gray-400 opacity-70 hover:opacity-100 hover:scale-102 shadow-sm hover:shadow-md'
+          ? "ring-3 ring-gray-900 ring-offset-2 scale-105 shadow-lg"
+          : "ring-2 ring-gray-200 hover:ring-gray-400 opacity-70 hover:opacity-100 hover:scale-102 shadow-sm hover:shadow-md"
         }
           `}
           style={{
@@ -249,7 +249,7 @@ const ThumbnailNavigation = memo(({
             minHeight: thumbnailSize
           }}
           aria-label={`Ver imagem ${index + 1}: ${image.alt}`}
-          aria-current={isActive ? 'true' : 'false'}
+          aria-current={isActive ? "true" : "false"}
           tabIndex={isActive ? 0 : -1}
         >
           {hasError ? (
@@ -266,7 +266,7 @@ const ThumbnailNavigation = memo(({
               width={thumbnailSize}
               height={thumbnailSize}
               className="w-full h-full object-cover object-center"
-              loading={index < 5 ? 'eager' : 'lazy'}
+              loading={index < 5 ? "eager" : "lazy"}
               quality={75}
               sizes={`${thumbnailSize}px`}
               onLoad={() => handleThumbnailLoad(index)}
@@ -293,31 +293,31 @@ const ThumbnailNavigation = memo(({
   return (
     <div className={`relative ${className}`} role="region" aria-label="Navegação de miniaturas">
       {/* Scroll buttons */}
-      {showScrollButtons && screenSize === 'mobile' && (
+      {showScrollButtons && screenSize === "mobile" && (
         <>
           <button
-            onClick={() => scrollThumbnails('left')}
+            onClick={() => scrollThumbnails("left")}
             disabled={!canScrollLeft}
             className={`
               absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10
               w-10 h-10 bg-white shadow-lg hover:shadow-xl text-gray-600 hover:text-gray-900
               rounded-full flex items-center justify-center transition-all duration-300
               border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-900
-              ${!canScrollLeft ? 'opacity-50 cursor-not-allowed' : ''}
+              ${!canScrollLeft ? "opacity-50 cursor-not-allowed" : ""}
             `}
             aria-label="Rolar miniaturas para a esquerda"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
-            onClick={() => scrollThumbnails('right')}
+            onClick={() => scrollThumbnails("right")}
             disabled={!canScrollRight}
             className={`
               absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10
               w-10 h-10 bg-white shadow-lg hover:shadow-xl text-gray-600 hover:text-gray-900
               rounded-full flex items-center justify-center transition-all duration-300
               border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-900
-              ${!canScrollRight ? 'opacity-50 cursor-not-allowed' : ''}
+              ${!canScrollRight ? "opacity-50 cursor-not-allowed" : ""}
             `}
             aria-label="Rolar miniaturas para a direita"
           >
@@ -332,17 +332,17 @@ const ThumbnailNavigation = memo(({
           ref={containerRef}
           className={`
             flex gap-3 py-4 transition-all duration-300
-            ${screenSize === 'mobile'
-      ? 'overflow-x-auto scrollbar-hide px-4'
-      : screenSize === 'tablet'
-        ? 'justify-center px-8'
-        : 'overflow-x-auto scrollbar-hide px-12'
+            ${screenSize === "mobile"
+      ? "overflow-x-auto scrollbar-hide px-4"
+      : screenSize === "tablet"
+        ? "justify-center px-8"
+        : "overflow-x-auto scrollbar-hide px-12"
     }
           `}
           style={{
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-            WebkitOverflowScrolling: 'touch',
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+            WebkitOverflowScrolling: "touch",
             ...(enableVirtualization && { width: virtualization.totalSize })
           }}
           onScroll={handleScroll}
@@ -369,6 +369,6 @@ const ThumbnailNavigation = memo(({
   );
 });
 
-ThumbnailNavigation.displayName = 'ThumbnailNavigation';
+ThumbnailNavigation.displayName = "ThumbnailNavigation";
 
 export default ThumbnailNavigation;

@@ -85,7 +85,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
                 <Image
-                  src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(39).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMzkpLmpwZyIsImlhdCI6MTc1MDM3MDczMywiZXhwIjo0OTAzOTcwNzMzfQ.kAad5hr71WhrMZl6GHJN5KOVGDg1Jgcjd9L17o4GBGM"
+                  src="/images/LSF (39).webp"
                   priority
                   alt="Clínica Monalisy Rodrigues"
                   width={4000}

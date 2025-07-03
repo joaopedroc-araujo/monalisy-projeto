@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import ResponsiveImageGallery from './ResponsiveImageGallery';
+import ResponsiveImageGallery from "./ResponsiveImageGallery";
 
 interface GalleryImage {
   id: number;
@@ -13,39 +13,39 @@ const ClinicGallery = () => {
   const images: GalleryImage[] = [
     {
       id: 1,
-      src: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(24).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMjQpLmpwZyIsImlhdCI6MTc1MDUyMDQ4MiwiZXhwIjo0OTA0MTIwNDgyfQ.Hve2_hfjFKYRxKqlPsF_UEuPSLCZ5LFxmjhzJfjdu_o',
-      alt: 'Recepção da Clínica Monalisy Rodrigues',
-      caption: 'Ambiente acolhedor e moderno da nossa recepção'
+      src: "/images/LSF (24).webp",
+      alt: "Recepção da Clínica Monalisy Rodrigues",
+      caption: "Ambiente acolhedor e moderno da nossa recepção"
     },
     {
       id: 2,
-      src: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(38).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMzgpLmpwZyIsImlhdCI6MTc1MDYwMzM4MiwiZXhwIjo0OTA0MjAzMzgyfQ.rwzwKaHHMKM2vaFyi_ag84jymmWGiu03N0RF-Qzzzqw',
-      alt: 'Sala de procedimentos',
-      caption: 'Preparação e atenção em cada detalhe'
+      src: "/images/LSF (38).webp",
+      alt: "Sala de procedimentos",
+      caption: "Preparação e atenção em cada detalhe"
     },
     {
       id: 3,
-      src: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(32).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMzIpLmpwZyIsImlhdCI6MTc1MDUyMDYwNCwiZXhwIjo0OTA0MTIwNjA0fQ.fDPtrhu3DYKBRQKLGa-Ee5KO5KVPPvNQ0RIp6DGjfvo',
-      alt: 'Equipamentos modernos',
-      caption: 'Equipamentos de última geração para tratamentos seguros'
+      src: "/images/LSF (32).webp",
+      alt: "Equipamentos modernos",
+      caption: "Equipamentos de última geração para tratamentos seguros"
     },
     {
       id: 4,
-      src: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(29).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMjkpLmpwZyIsImlhdCI6MTc1MDUyMDcxOCwiZXhwIjo0OTA0MTIwNzE4fQ.dJ8CRoGbF8sKry2XVg_Do0uRkfJgGZtC6Efg8CS2tcc',
-      alt: 'Consultório médico',
-      caption: 'Consultórios confortáveis para avaliações personalizadas'
+      src: "/images/LSF (29).webp",
+      alt: "Consultório médico",
+      caption: "Consultórios confortáveis para avaliações personalizadas"
     },
     {
       id: 5,
-      src: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(20).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMjApLmpwZyIsImlhdCI6MTc1MDUyMTE4NiwiZXhwIjo0OTA0MTIxMTg2fQ.41qtc55sz5nyG0h4uAcLUXBBEz7ZyHMUJgZQiJUL3KM',
-      alt: 'Área de relaxamento',
-      caption: 'Espaços pensados para seu conforto e bem-estar'
+      src: "/images/LSF (20).webp",
+      alt: "Área de relaxamento",
+      caption: "Espaços pensados para seu conforto e bem-estar"
     },
     {
       id: 6,
-      src: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(14).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMTQpLmpwZyIsImlhdCI6MTc1MDUyMDI3NiwiZXhwIjoyMDY1ODgwMjc2fQ.VY-tsQXM9SrwkQFnHgRAMiqNEwXeWX2avVQOEvUVnAI',
-      alt: 'Equipe especializada',
-      caption: 'Profissionais qualificados e em constante atualização'
+      src: "/images/LSF (14).webp",
+      alt: "Equipe especializada",
+      caption: "Profissionais qualificados e em constante atualização"
     }
   ];
 
