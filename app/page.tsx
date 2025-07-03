@@ -88,8 +88,8 @@ export default function Home() {
                   src="/images/LSF (39).webp"
                   priority
                   alt="Clínica Monalisy Rodrigues"
-                  width={4000}
-                  height={6000}
+                  width={800}
+                  height={500}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
                       src={treatment.image}
                       alt={treatment.title}
                       width={800}
-                      height={450}
+                      height={500}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

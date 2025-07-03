@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 interface ProfessionalData {
   id: number;
@@ -18,17 +18,17 @@ interface ProfessionalProfileProps {
   className?: string;
 }
 
-const ProfessionalProfile = ({ professional, index, className = '' }: ProfessionalProfileProps) => {
+const ProfessionalProfile = ({ professional, index, className = "" }: ProfessionalProfileProps) => {
   const isEven = index % 2 === 0;
 
   return (
-    <section className={`py-20 ${isEven ? 'bg-white' : 'bg-gray-50'} ${className}`}>
+    <section className={`py-20 ${isEven ? "bg-white" : "bg-gray-50"} ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-          isEven ? 'lg:grid-flow-col' : 'lg:grid-flow-col-dense'
+          isEven ? "lg:grid-flow-col" : "lg:grid-flow-col-dense"
         }`}>
           {/* Conteúdo de Texto */}
-          <div className={`space-y-6 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+          <div className={`space-y-6 ${isEven ? "lg:order-1" : "lg:order-2"}`}>
             <div>
               <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900 mb-2">
                 {professional.name}
@@ -78,7 +78,7 @@ const ProfessionalProfile = ({ professional, index, className = '' }: Profession
           </div>
 
           {/* Imagem */}
-          <div className={`relative ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+          <div className={`relative ${isEven ? "lg:order-2" : "lg:order-1"}`}>
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-100 shadow-2xl">
               <Image
                 src={professional.image}
@@ -94,13 +94,13 @@ const ProfessionalProfile = ({ professional, index, className = '' }: Profession
             {/* Elementos decorativos */}
             <div className={`absolute w-32 h-32 bg-gray-100 rounded-2xl -z-10 ${
               isEven
-                ? '-bottom-6 -right-6'
-                : '-bottom-6 -left-6'
+                ? "-bottom-6 -right-6"
+                : "-bottom-6 -left-6"
             }`}></div>
             <div className={`absolute w-24 h-24 bg-gray-200 rounded-2xl -z-10 ${
               isEven
-                ? '-top-6 -left-6'
-                : '-top-6 -right-6'
+                ? "-top-6 -left-6"
+                : "-top-6 -right-6"
             }`}></div>
           </div>
         </div>

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState, memo } from 'react';
+import Image from "next/image";
+import { useState, memo } from "react";
 
 interface OptimizedImageProps {
   src: string;
@@ -10,7 +10,7 @@ interface OptimizedImageProps {
   height?: number;
   className?: string;
   priority?: boolean;
-  loading?: 'lazy' | 'eager';
+  loading?: "lazy" | "eager";
   quality?: number;
   sizes?: string;
   fill?: boolean;
@@ -23,9 +23,9 @@ const OptimizedImage = memo(({
   alt,
   width,
   height,
-  className = '',
+  className = "",
   priority = false,
-  loading = 'lazy',
+  loading = "lazy",
   quality = 85,
   sizes,
   fill = false,
@@ -57,7 +57,7 @@ const OptimizedImage = memo(({
   const imageProps = {
     src,
     alt,
-    className: `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`,
+    className: `${className} ${isLoading ? "opacity-0" : "opacity-100"} transition-opacity duration-300`,
     priority,
     loading,
     quality,
@@ -77,6 +77,6 @@ const OptimizedImage = memo(({
   );
 });
 
-OptimizedImage.displayName = 'OptimizedImage';
+OptimizedImage.displayName = "OptimizedImage";
 
 export default OptimizedImage;
