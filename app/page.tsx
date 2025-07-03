@@ -13,7 +13,7 @@ export default function Home() {
     {
       title: "Tratamentos Corporais",
       description: "Modelagem, firmeza e cuidados estéticos para o corpo",
-      image: "https://images.pexels.com/photos/3736413/pexels-photo-3736413.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://images.pexels.com/photos/10894312/pexels-photo-10894312.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Tratamentos Capilares",
