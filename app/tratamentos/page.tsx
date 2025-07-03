@@ -1,104 +1,104 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, Users, Award, Shield } from 'lucide-react';
-import Image from 'next/image';
+import { useState } from "react";
+import Link from "next/link";
+import { ArrowRight, Clock, Star, Users, Award, Shield } from "lucide-react";
+import Image from "next/image";
 
 export default function Tratamentos() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('todos');
+  const [selectedCategory, setSelectedCategory] = useState<string>("todos");
 
   const treatments = [
     {
-      id: 'harmonizacao-facial',
-      title: 'Harmonização Facial',
-      category: 'facial',
-      description: 'Procedimento que visa equilibrar e realçar os traços faciais de forma natural e harmoniosa, utilizando técnicas avançadas de preenchimento e contorno.',
-      duration: '60-90 min',
-      price: 'A partir de R$ 800',
-      image: 'https://images.pexels.com/photos/3985333/pexels-photo-3985333.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/harmonizacao-facial'
+      id: "harmonizacao-facial",
+      title: "Harmonização Facial",
+      category: "facial",
+      description: "Procedimento que visa equilibrar e realçar os traços faciais de forma natural e harmoniosa, utilizando técnicas avançadas de preenchimento e contorno.",
+      duration: "60-90 min",
+      price: "A partir de R$ 800",
+      image: "https://images.pexels.com/photos/3985333/pexels-photo-3985333.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/harmonizacao-facial"
     },
     {
-      id: 'toxina-botulinica',
-      title: 'Toxina Botulínica',
-      category: 'facial',
-      description: 'Tratamento para suavizar rugas de expressão e prevenir o envelhecimento, proporcionando uma aparência mais jovem e descansada.',
-      duration: '30-45 min',
-      price: 'A partir de R$ 600',
-      image: 'https://images.pexels.com/photos/3985334/pexels-photo-3985334.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/toxina-botulinica'
+      id: "toxina-botulinica",
+      title: "Toxina Botulínica",
+      category: "facial",
+      description: "Tratamento para suavizar rugas de expressão e prevenir o envelhecimento, proporcionando uma aparência mais jovem e descansada.",
+      duration: "30-45 min",
+      price: "A partir de R$ 600",
+      image: "https://images.pexels.com/photos/3985334/pexels-photo-3985334.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/toxina-botulinica"
     },
     {
-      id: 'preenchimento-acido-hialuronico',
-      title: 'Preenchimento com Ácido Hialurônico',
-      category: 'facial',
-      description: 'Restaura volume e hidratação, suavizando rugas e sulcos faciais para um aspecto mais jovem e natural.',
-      duration: '45-60 min',
-      price: 'A partir de R$ 700',
-      image: 'https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/preenchimento-acido-hialuronico'
+      id: "preenchimento-acido-hialuronico",
+      title: "Preenchimento com Ácido Hialurônico",
+      category: "facial",
+      description: "Restaura volume e hidratação, suavizando rugas e sulcos faciais para um aspecto mais jovem e natural.",
+      duration: "45-60 min",
+      price: "A partir de R$ 700",
+      image: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/preenchimento-acido-hialuronico"
     },
     {
-      id: 'microagulhamento-facial',
-      title: 'Microagulhamento Facial',
-      category: 'facial',
-      description: 'Estimula a regeneração natural da pele melhorando cicatrizes, poros dilatados e textura geral da pele.',
-      duration: '60-75 min',
-      price: 'A partir de R$ 350',
-      image: 'https://images.pexels.com/photos/3985336/pexels-photo-3985336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/microagulhamento-facial'
+      id: "microagulhamento-facial",
+      title: "Microagulhamento Facial",
+      category: "facial",
+      description: "Estimula a regeneração natural da pele melhorando cicatrizes, poros dilatados e textura geral da pele.",
+      duration: "60-75 min",
+      price: "A partir de R$ 350",
+      image: "https://images.pexels.com/photos/3985336/pexels-photo-3985336.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/microagulhamento-facial"
     },
     {
-      id: 'criolipolise',
-      title: 'Criolipólise',
-      category: 'corporal',
-      description: 'Eliminação de gordura localizada através do congelamento controlado das células adiposas, sem cirurgia.',
-      duration: '60-90 min',
-      price: 'A partir de R$ 400',
-      image: 'https://images.pexels.com/photos/3736413/pexels-photo-3736413.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/criolipolise'
+      id: "criolipolise",
+      title: "Criolipólise",
+      category: "corporal",
+      description: "Eliminação de gordura localizada através do congelamento controlado das células adiposas, sem cirurgia.",
+      duration: "60-90 min",
+      price: "A partir de R$ 400",
+      image: "https://images.pexels.com/photos/3736413/pexels-photo-3736413.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/criolipolise"
     },
     {
-      id: 'radiofrequencia-corporal',
-      title: 'Radiofrequência Corporal',
-      category: 'corporal',
-      description: 'Tratamento para firmeza e tonificação da pele, reduzindo flacidez corporal através do aquecimento controlado.',
-      duration: '45-60 min',
-      price: 'A partir de R$ 300',
-      image: 'https://images.pexels.com/photos/3985335/pexels-photo-3985335.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/radiofrequencia-corporal'
+      id: "radiofrequencia-corporal",
+      title: "Radiofrequência Corporal",
+      category: "corporal",
+      description: "Tratamento para firmeza e tonificação da pele, reduzindo flacidez corporal através do aquecimento controlado.",
+      duration: "45-60 min",
+      price: "A partir de R$ 300",
+      image: "https://images.pexels.com/photos/3985335/pexels-photo-3985335.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/radiofrequencia-corporal"
     },
     {
-      id: 'drenagem-linfatica',
-      title: 'Drenagem Linfática',
-      category: 'corporal',
-      description: 'Técnica que estimula o sistema linfático, reduzindo inchaço, melhorando a circulação e promovendo relaxamento.',
-      duration: '60-75 min',
-      price: 'A partir de R$ 200',
-      image: 'https://images.pexels.com/photos/3985337/pexels-photo-3985337.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/drenagem-linfatica'
+      id: "drenagem-linfatica",
+      title: "Drenagem Linfática",
+      category: "corporal",
+      description: "Técnica que estimula o sistema linfático, reduzindo inchaço, melhorando a circulação e promovendo relaxamento.",
+      duration: "60-75 min",
+      price: "A partir de R$ 200",
+      image: "https://images.pexels.com/photos/3985337/pexels-photo-3985337.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/drenagem-linfatica"
     },
     {
-      id: 'mesoterapia-capilar',
-      title: 'Mesoterapia Capilar',
-      category: 'capilar',
-      description: 'Aplicação de ativos revitalizantes diretamente no couro cabeludo para estimular o crescimento e fortalecer os fios.',
-      duration: '45-60 min',
-      price: 'A partir de R$ 250',
-      image: 'https://images.pexels.com/photos/3993096/pexels-photo-3993096.jpeg?auto=compress&cs=tinysrgb&w=800',
-      href: '/tratamentos/mesoterapia-capilar'
+      id: "mesoterapia-capilar",
+      title: "Mesoterapia Capilar",
+      category: "capilar",
+      description: "Aplicação de ativos revitalizantes diretamente no couro cabeludo para estimular o crescimento e fortalecer os fios.",
+      duration: "45-60 min",
+      price: "A partir de R$ 250",
+      image: "https://images.pexels.com/photos/3993096/pexels-photo-3993096.jpeg?auto=compress&cs=tinysrgb&w=800",
+      href: "/tratamentos/mesoterapia-capilar"
     }
   ];
 
   const categories = [
-    { id: 'todos', name: 'Todos os Tratamentos', icon: <Star className="w-5 h-5" /> },
-    { id: 'facial', name: 'Tratamentos Faciais', icon: <Users className="w-5 h-5" /> },
-    { id: 'corporal', name: 'Tratamentos Corporais', icon: <Shield className="w-5 h-5" /> },
-    { id: 'capilar', name: 'Tratamentos Capilares', icon: <Award className="w-5 h-5" /> }
+    { id: "todos", name: "Todos os Tratamentos", icon: <Star className="w-5 h-5" /> },
+    { id: "facial", name: "Tratamentos Faciais", icon: <Users className="w-5 h-5" /> },
+    { id: "corporal", name: "Tratamentos Corporais", icon: <Shield className="w-5 h-5" /> },
+    { id: "capilar", name: "Tratamentos Capilares", icon: <Award className="w-5 h-5" /> }
   ];
 
-  const filteredTreatments = selectedCategory === 'todos'
+  const filteredTreatments = selectedCategory === "todos"
     ? treatments
     : treatments.filter(treatment => treatment.category === selectedCategory);
 
@@ -144,8 +144,8 @@ export default function Tratamentos() {
                 className={`
                   flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300
                   ${selectedCategory === category.id
-                ? 'bg-gray-900 text-white shadow-lg'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800'
+                ? "bg-gray-900 text-white shadow-lg"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800"
               }
                 `}
               >
@@ -209,12 +209,12 @@ export default function Tratamentos() {
                     </div>
                     <div className={`
                       px-3 py-1 rounded-full text-xs font-medium
-                      ${treatment.category === 'facial' ? 'bg-blue-100 text-blue-800' :
-                treatment.category === 'corporal' ? 'bg-green-100 text-green-800' :
-                  'bg-purple-100 text-purple-800'}
+                      ${treatment.category === "facial" ? "bg-blue-100 text-blue-800" :
+                treatment.category === "corporal" ? "bg-green-100 text-green-800" :
+                  "bg-purple-100 text-purple-800"}
                     `}>
-                      {treatment.category === 'facial' ? 'Facial' :
-                        treatment.category === 'corporal' ? 'Corporal' : 'Capilar'}
+                      {treatment.category === "facial" ? "Facial" :
+                        treatment.category === "corporal" ? "Corporal" : "Capilar"}
                     </div>
                   </div>
                 </div>

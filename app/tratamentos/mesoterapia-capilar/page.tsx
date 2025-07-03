@@ -1,50 +1,50 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function MesoterapiaCapilar() {
   const benefits = [
-    'Estimula o crescimento capilar',
-    'Fortalece os fios',
-    'Melhora a circulação do couro cabeludo',
-    'Reduz a queda de cabelo',
-    'Nutrição profunda',
-    'Aumenta densidade capilar',
-    'Melhora qualidade dos fios',
-    'Revitaliza folículos pilosos'
+    "Estimula o crescimento capilar",
+    "Fortalece os fios",
+    "Melhora a circulação do couro cabeludo",
+    "Reduz a queda de cabelo",
+    "Nutrição profunda",
+    "Aumenta densidade capilar",
+    "Melhora qualidade dos fios",
+    "Revitaliza folículos pilosos"
   ];
 
   const indications = [
-    'Queda de cabelo',
-    'Alopecia androgenética',
-    'Cabelos finos e fracos',
-    'Falta de densidade',
-    'Couro cabeludo ressecado',
-    'Calvície inicial',
-    'Cabelos sem brilho',
-    'Envelhecimento capilar'
+    "Queda de cabelo",
+    "Alopecia androgenética",
+    "Cabelos finos e fracos",
+    "Falta de densidade",
+    "Couro cabeludo ressecado",
+    "Calvície inicial",
+    "Cabelos sem brilho",
+    "Envelhecimento capilar"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Avaliação Tricológica',
-      description: 'Análise completa do couro cabeludo e identificação das necessidades.'
+      step: "1",
+      title: "Avaliação Tricológica",
+      description: "Análise completa do couro cabeludo e identificação das necessidades."
     },
     {
-      step: '2',
-      title: 'Preparação',
-      description: 'Limpeza do couro cabeludo e preparação dos ativos específicos.'
+      step: "2",
+      title: "Preparação",
+      description: "Limpeza do couro cabeludo e preparação dos ativos específicos."
     },
     {
-      step: '3',
-      title: 'Aplicação',
-      description: 'Injeção dos ativos revitalizantes diretamente no couro cabeludo.'
+      step: "3",
+      title: "Aplicação",
+      description: "Injeção dos ativos revitalizantes diretamente no couro cabeludo."
     },
     {
-      step: '4',
-      title: 'Massagem',
-      description: 'Massagem estimulante para potencializar a absorção dos ativos.'
+      step: "4",
+      title: "Massagem",
+      description: "Massagem estimulante para potencializar a absorção dos ativos."
     }
   ];
 

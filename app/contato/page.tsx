@@ -1,64 +1,64 @@
-'use client';
+"use client";
 
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, MessageCircle, Navigation, Calendar } from 'lucide-react';
-import Link from 'next/link';
-import { FaWhatsapp } from 'react-icons/fa';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, MessageCircle, Navigation, Calendar } from "lucide-react";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contato() {
   const contactMethods = [
     {
       icon: <Phone className="w-8 h-8" />,
-      title: 'Telefone',
-      primary: '(31) 99999-9999',
-      secondary: '(31) 3333-3333',
-      description: 'Ligue para agendar sua consulta',
-      action: 'tel:+5531999999999',
-      actionText: 'Ligar Agora',
-      color: 'bg-blue-600 text-white'
+      title: "Telefone",
+      primary: "(31) 99999-9999",
+      secondary: "(31) 3333-3333",
+      description: "Ligue para agendar sua consulta",
+      action: "tel:+5531999999999",
+      actionText: "Ligar Agora",
+      color: "bg-blue-600 text-white"
     },
     {
       icon: <FaWhatsapp className="w-8 h-8" />,
-      title: 'WhatsApp',
-      primary: '(31) 99999-9999',
-      secondary: 'Resposta rápida',
-      description: 'Converse conosco pelo WhatsApp',
-      action: 'https://wa.me/5531999999999',
-      actionText: 'Enviar Mensagem',
-      color: 'bg-green-600 text-white'
+      title: "WhatsApp",
+      primary: "(31) 99999-9999",
+      secondary: "Resposta rápida",
+      description: "Converse conosco pelo WhatsApp",
+      action: "https://wa.me/5531999999999",
+      actionText: "Enviar Mensagem",
+      color: "bg-green-600 text-white"
     },
     {
       icon: <Mail className="w-8 h-8" />,
-      title: 'E-mail',
-      primary: 'contato@clinicamonalisy.com.br',
-      secondary: 'agendamento@clinicamonalisy.com.br',
-      description: 'Envie suas dúvidas por e-mail',
-      action: 'mailto:contato@clinicamonalisy.com.br',
-      actionText: 'Enviar E-mail',
-      color: 'bg-purple-600 text-white'
+      title: "E-mail",
+      primary: "contato@clinicamonalisy.com.br",
+      secondary: "agendamento@clinicamonalisy.com.br",
+      description: "Envie suas dúvidas por e-mail",
+      action: "mailto:contato@clinicamonalisy.com.br",
+      actionText: "Enviar E-mail",
+      color: "bg-purple-600 text-white"
     }
   ];
 
   const socialLinks = [
     {
       icon: <Instagram className="w-6 h-6" />,
-      name: 'Instagram',
-      handle: '@clinicamonalisy',
-      url: '#',
-      color: 'bg-pink-50 text-pink-600 hover:bg-pink-100'
+      name: "Instagram",
+      handle: "@clinicamonalisy",
+      url: "#",
+      color: "bg-pink-50 text-pink-600 hover:bg-pink-100"
     },
     {
       icon: <Facebook className="w-6 h-6" />,
-      name: 'Facebook',
-      handle: 'Clínica Monalisy Rodrigues',
-      url: '#',
-      color: 'bg-blue-50 text-blue-600 hover:bg-blue-100'
+      name: "Facebook",
+      handle: "Clínica Monalisy Rodrigues",
+      url: "#",
+      color: "bg-blue-50 text-blue-600 hover:bg-blue-100"
     }
   ];
 
   const businessHours = [
-    { day: 'Segunda a Sexta', hours: '8h às 20h' },
-    { day: 'Sábado', hours: 'Fechado' },
-    { day: 'Domingo', hours: 'Fechado' }
+    { day: "Segunda a Sexta", hours: "8h às 20h" },
+    { day: "Sábado", hours: "Fechado" },
+    { day: "Domingo", hours: "Fechado" }
   ];
 
   return (
@@ -131,8 +131,8 @@ export default function Contato() {
 
                   <Link
                     href={method.action}
-                    target={method.action.startsWith('http') ? '_blank' : undefined}
-                    rel={method.action.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    target={method.action.startsWith("http") ? "_blank" : undefined}
+                    rel={method.action.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="inline-flex items-center justify-center w-full px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors duration-200 group-hover:shadow-lg"
                   >
                     {method.actionText}

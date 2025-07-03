@@ -1,51 +1,51 @@
-import Link from 'next/link';
-import { ArrowRight, Star, Shield, Users, Clock } from 'lucide-react';
-import Image from 'next/image';
-import ClinicGallery from '@/components/ClinicGallery';
+import Link from "next/link";
+import { ArrowRight, Star, Shield, Users, Clock } from "lucide-react";
+import Image from "next/image";
+import ClinicGallery from "@/components/ClinicGallery";
 
 export default function Home() {
   const treatmentHighlights = [
     {
-      title: 'Tratamentos Faciais',
-      description: 'Harmonização, rejuvenescimento e cuidados especializados para o rosto',
-      image: 'https://images.pexels.com/photos/3985333/pexels-photo-3985333.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: "Tratamentos Faciais",
+      description: "Harmonização, rejuvenescimento e cuidados especializados para o rosto",
+      image: "https://images.pexels.com/photos/3985333/pexels-photo-3985333.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
-      title: 'Tratamentos Corporais',
-      description: 'Modelagem, firmeza e cuidados estéticos para o corpo',
-      image: 'https://images.pexels.com/photos/3736413/pexels-photo-3736413.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: "Tratamentos Corporais",
+      description: "Modelagem, firmeza e cuidados estéticos para o corpo",
+      image: "https://images.pexels.com/photos/3736413/pexels-photo-3736413.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
-      title: 'Tratamentos Capilares',
-      description: 'Fortalecimento, crescimento e saúde capilar',
-      image: 'https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: "Tratamentos Capilares",
+      description: "Fortalecimento, crescimento e saúde capilar",
+      image: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ];
 
   const features = [
     {
       icon: <Shield className="w-8 h-8" />,
-      title: 'Segurança e Qualidade',
+      title: "Segurança e Qualidade",
       description:
-        'Tratamentos realizados com equipamentos de última geração e protocolos rigorosos de segurança.',
+        "Tratamentos realizados com equipamentos de última geração e protocolos rigorosos de segurança.",
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: 'Equipe Especializada',
+      title: "Equipe Especializada",
       description:
-        'Profissionais altamente qualificados e em constante atualização nas mais modernas técnicas.',
+        "Profissionais altamente qualificados e em constante atualização nas mais modernas técnicas.",
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: 'Resultados Comprovados',
+      title: "Resultados Comprovados",
       description:
-        'Tratamentos eficazes com resultados naturais e duradouros para realçar sua beleza.',
+        "Tratamentos eficazes com resultados naturais e duradouros para realçar sua beleza.",
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      title: 'Atendimento Personalizado',
+      title: "Atendimento Personalizado",
       description:
-        'Consultas detalhadas e planos de tratamento individualizados para cada paciente.',
+        "Consultas detalhadas e planos de tratamento individualizados para cada paciente.",
     },
   ];
 

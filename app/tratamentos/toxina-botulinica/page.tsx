@@ -1,48 +1,48 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function ToxinaBotulinica() {
   const benefits = [
-    'Suavização de rugas de expressão',
-    'Prevenção do envelhecimento',
-    'Resultado natural e harmonioso',
-    'Procedimento rápido e seguro',
-    'Sem tempo de inatividade',
-    'Melhora da autoestima',
-    'Técnica minimamente invasiva',
-    'Efeito duradouro'
+    "Suavização de rugas de expressão",
+    "Prevenção do envelhecimento",
+    "Resultado natural e harmonioso",
+    "Procedimento rápido e seguro",
+    "Sem tempo de inatividade",
+    "Melhora da autoestima",
+    "Técnica minimamente invasiva",
+    "Efeito duradouro"
   ];
 
   const treatmentAreas = [
-    'Rugas da testa',
-    'Pés de galinha',
-    'Glabela (entre as sobrancelhas)',
-    'Sorriso gengival',
-    'Rugas do pescoço',
-    'Bruxismo'
+    "Rugas da testa",
+    "Pés de galinha",
+    "Glabela (entre as sobrancelhas)",
+    "Sorriso gengival",
+    "Rugas do pescoço",
+    "Bruxismo"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Avaliação Facial',
-      description: 'Análise da musculatura facial e identificação das áreas a serem tratadas.'
+      step: "1",
+      title: "Avaliação Facial",
+      description: "Análise da musculatura facial e identificação das áreas a serem tratadas."
     },
     {
-      step: '2',
-      title: 'Marcação dos Pontos',
-      description: 'Demarcação precisa dos pontos de aplicação para resultados otimizados.'
+      step: "2",
+      title: "Marcação dos Pontos",
+      description: "Demarcação precisa dos pontos de aplicação para resultados otimizados."
     },
     {
-      step: '3',
-      title: 'Aplicação',
-      description: 'Injeção da toxina botulínica com técnica refinada e segura.'
+      step: "3",
+      title: "Aplicação",
+      description: "Injeção da toxina botulínica com técnica refinada e segura."
     },
     {
-      step: '4',
-      title: 'Orientações',
-      description: 'Instruções pós-tratamento para maximizar os resultados.'
+      step: "4",
+      title: "Orientações",
+      description: "Instruções pós-tratamento para maximizar os resultados."
     }
   ];
 

@@ -1,55 +1,55 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function MicroagulhamentoFacial() {
   const benefits = [
-    'Melhora cicatrizes de acne',
-    'Reduz poros dilatados',
-    'Estimula renovação celular',
-    'Melhora textura da pele',
-    'Aumenta absorção de ativos',
-    'Estimula produção de colágeno',
-    'Reduz linhas finas',
-    'Uniformiza tom da pele'
+    "Melhora cicatrizes de acne",
+    "Reduz poros dilatados",
+    "Estimula renovação celular",
+    "Melhora textura da pele",
+    "Aumenta absorção de ativos",
+    "Estimula produção de colágeno",
+    "Reduz linhas finas",
+    "Uniformiza tom da pele"
   ];
 
   const indications = [
-    'Cicatrizes de acne',
-    'Poros dilatados',
-    'Rugas finas',
-    'Flacidez leve',
-    'Manchas superficiais',
-    'Textura irregular',
-    'Estrias faciais',
-    'Melasma leve'
+    "Cicatrizes de acne",
+    "Poros dilatados",
+    "Rugas finas",
+    "Flacidez leve",
+    "Manchas superficiais",
+    "Textura irregular",
+    "Estrias faciais",
+    "Melasma leve"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Limpeza da Pele',
-      description: 'Higienização completa e preparação da pele para o procedimento.'
+      step: "1",
+      title: "Limpeza da Pele",
+      description: "Higienização completa e preparação da pele para o procedimento."
     },
     {
-      step: '2',
-      title: 'Anestesia Tópica',
-      description: 'Aplicação de anestésico para garantir conforto durante o tratamento.'
+      step: "2",
+      title: "Anestesia Tópica",
+      description: "Aplicação de anestésico para garantir conforto durante o tratamento."
     },
     {
-      step: '3',
-      title: 'Microagulhamento',
-      description: 'Aplicação do equipamento com movimentos precisos e controlados.'
+      step: "3",
+      title: "Microagulhamento",
+      description: "Aplicação do equipamento com movimentos precisos e controlados."
     },
     {
-      step: '4',
-      title: 'Aplicação de Ativos',
-      description: 'Uso de séruns específicos para potencializar os resultados.'
+      step: "4",
+      title: "Aplicação de Ativos",
+      description: "Uso de séruns específicos para potencializar os resultados."
     },
     {
-      step: '5',
-      title: 'Finalização',
-      description: 'Aplicação de protetor solar e orientações pós-tratamento.'
+      step: "5",
+      title: "Finalização",
+      description: "Aplicação de protetor solar e orientações pós-tratamento."
     }
   ];
 

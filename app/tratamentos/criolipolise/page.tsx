@@ -1,50 +1,50 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function Criolipolise() {
   const benefits = [
-    'Redução de gordura localizada',
-    'Procedimento não invasivo',
-    'Sem tempo de recuperação',
-    'Resultados duradouros',
-    'Seguro e eficaz',
-    'Não requer anestesia',
-    'Retorno imediato às atividades',
-    'Eliminação natural das células'
+    "Redução de gordura localizada",
+    "Procedimento não invasivo",
+    "Sem tempo de recuperação",
+    "Resultados duradouros",
+    "Seguro e eficaz",
+    "Não requer anestesia",
+    "Retorno imediato às atividades",
+    "Eliminação natural das células"
   ];
 
   const treatmentAreas = [
-    'Abdômen',
-    'Flancos (love handles)',
-    'Culote',
-    'Costas',
-    'Braços',
-    'Coxas',
-    'Papada',
-    'Região submentoniana'
+    "Abdômen",
+    "Flancos (love handles)",
+    "Culote",
+    "Costas",
+    "Braços",
+    "Coxas",
+    "Papada",
+    "Região submentoniana"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Avaliação',
-      description: 'Análise das áreas de gordura localizada e planejamento do tratamento.'
+      step: "1",
+      title: "Avaliação",
+      description: "Análise das áreas de gordura localizada e planejamento do tratamento."
     },
     {
-      step: '2',
-      title: 'Preparação',
-      description: 'Posicionamento do equipamento e proteção da pele com gel.'
+      step: "2",
+      title: "Preparação",
+      description: "Posicionamento do equipamento e proteção da pele com gel."
     },
     {
-      step: '3',
-      title: 'Aplicação',
-      description: 'Congelamento controlado das células adiposas por 35-60 minutos.'
+      step: "3",
+      title: "Aplicação",
+      description: "Congelamento controlado das células adiposas por 35-60 minutos."
     },
     {
-      step: '4',
-      title: 'Massagem',
-      description: 'Massagem pós-tratamento para otimizar os resultados.'
+      step: "4",
+      title: "Massagem",
+      description: "Massagem pós-tratamento para otimizar os resultados."
     }
   ];
 

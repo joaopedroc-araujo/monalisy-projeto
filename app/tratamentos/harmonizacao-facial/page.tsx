@@ -1,61 +1,61 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function HarmonizacaoFacial() {
   const benefits = [
-    'Equilíbrio das proporções faciais',
-    'Realce da beleza natural',
-    'Resultados imediatos e naturais',
-    'Procedimento minimamente invasivo',
-    'Recuperação rápida',
-    'Melhora da autoestima',
-    'Técnicas personalizadas',
-    'Produtos de alta qualidade'
+    "Equilíbrio das proporções faciais",
+    "Realce da beleza natural",
+    "Resultados imediatos e naturais",
+    "Procedimento minimamente invasivo",
+    "Recuperação rápida",
+    "Melhora da autoestima",
+    "Técnicas personalizadas",
+    "Produtos de alta qualidade"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Consulta e Avaliação',
-      description: 'Análise detalhada das proporções faciais e definição dos objetivos do tratamento.'
+      step: "1",
+      title: "Consulta e Avaliação",
+      description: "Análise detalhada das proporções faciais e definição dos objetivos do tratamento."
     },
     {
-      step: '2',
-      title: 'Planejamento Personalizado',
-      description: 'Elaboração de um plano específico considerando suas características únicas.'
+      step: "2",
+      title: "Planejamento Personalizado",
+      description: "Elaboração de um plano específico considerando suas características únicas."
     },
     {
-      step: '3',
-      title: 'Preparação',
-      description: 'Aplicação de anestésico tópico e preparação da área a ser tratada.'
+      step: "3",
+      title: "Preparação",
+      description: "Aplicação de anestésico tópico e preparação da área a ser tratada."
     },
     {
-      step: '4',
-      title: 'Procedimento',
-      description: 'Aplicação precisa dos produtos para harmonização facial.'
+      step: "4",
+      title: "Procedimento",
+      description: "Aplicação precisa dos produtos para harmonização facial."
     },
     {
-      step: '5',
-      title: 'Finalização',
-      description: 'Avaliação do resultado e orientações pós-procedimento.'
+      step: "5",
+      title: "Finalização",
+      description: "Avaliação do resultado e orientações pós-procedimento."
     }
   ];
 
   const beforeAfterCare = {
     before: [
-      'Evitar medicamentos anticoagulantes',
-      'Não consumir álcool 24h antes',
-      'Informar sobre alergias',
-      'Chegar sem maquiagem',
-      'Hidratação adequada'
+      "Evitar medicamentos anticoagulantes",
+      "Não consumir álcool 24h antes",
+      "Informar sobre alergias",
+      "Chegar sem maquiagem",
+      "Hidratação adequada"
     ],
     after: [
-      'Evitar exercícios por 24h',
-      'Não massagear a área',
-      'Aplicar gelo se necessário',
-      'Evitar exposição solar',
-      'Seguir orientações médicas'
+      "Evitar exercícios por 24h",
+      "Não massagear a área",
+      "Aplicar gelo se necessário",
+      "Evitar exposição solar",
+      "Seguir orientações médicas"
     ]
   };
 

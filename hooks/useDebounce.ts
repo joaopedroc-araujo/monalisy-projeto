@@ -1,4 +1,4 @@
-import { useCallback, useRef } from 'react';
+import { useCallback, useRef } from "react";
 
 export function useDebounce<T extends (...args: any[]) => void>(
   callback: T,
@@ -11,7 +11,7 @@ export function useDebounce<T extends (...args: any[]) => void>(
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
-      
+
       timeoutRef.current = setTimeout(() => {
         callback(...args);
       }, delay);

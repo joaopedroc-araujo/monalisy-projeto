@@ -1,50 +1,50 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function PreenchimentoAcidoHialuronico() {
   const benefits = [
-    'Restauração do volume facial',
-    'Hidratação profunda da pele',
-    'Suavização de rugas e sulcos',
-    'Resultado imediato e natural',
-    'Produto biocompatível',
-    'Melhora da textura da pele',
-    'Estimula produção de colágeno',
-    'Reversível se necessário'
+    "Restauração do volume facial",
+    "Hidratação profunda da pele",
+    "Suavização de rugas e sulcos",
+    "Resultado imediato e natural",
+    "Produto biocompatível",
+    "Melhora da textura da pele",
+    "Estimula produção de colágeno",
+    "Reversível se necessário"
   ];
 
   const treatmentAreas = [
-    'Sulco nasogeniano',
-    'Código de barras (lábios)',
-    'Olheiras',
-    'Volume labial',
-    'Maçãs do rosto',
-    'Mandíbula',
-    'Queixo',
-    'Têmporas'
+    "Sulco nasogeniano",
+    "Código de barras (lábios)",
+    "Olheiras",
+    "Volume labial",
+    "Maçãs do rosto",
+    "Mandíbula",
+    "Queixo",
+    "Têmporas"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Análise Facial',
-      description: 'Avaliação detalhada das áreas que necessitam restauração de volume.'
+      step: "1",
+      title: "Análise Facial",
+      description: "Avaliação detalhada das áreas que necessitam restauração de volume."
     },
     {
-      step: '2',
-      title: 'Anestesia',
-      description: 'Aplicação de anestésico tópico para maior conforto durante o procedimento.'
+      step: "2",
+      title: "Anestesia",
+      description: "Aplicação de anestésico tópico para maior conforto durante o procedimento."
     },
     {
-      step: '3',
-      title: 'Preenchimento',
-      description: 'Aplicação gradual e precisa do ácido hialurônico nas áreas planejadas.'
+      step: "3",
+      title: "Preenchimento",
+      description: "Aplicação gradual e precisa do ácido hialurônico nas áreas planejadas."
     },
     {
-      step: '4',
-      title: 'Modelagem',
-      description: 'Massagem suave para distribuição uniforme e resultado harmonioso.'
+      step: "4",
+      title: "Modelagem",
+      description: "Massagem suave para distribuição uniforme e resultado harmonioso."
     }
   ];
 

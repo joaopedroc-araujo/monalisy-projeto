@@ -1,50 +1,50 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function DrenagemLinfatica() {
   const benefits = [
-    'Reduz inchaço e retenção',
-    'Melhora a circulação',
-    'Elimina toxinas',
-    'Promove relaxamento',
-    'Acelera recuperação pós-procedimentos',
-    'Fortalece sistema imunológico',
-    'Melhora qualidade do sono',
-    'Reduz celulite'
+    "Reduz inchaço e retenção",
+    "Melhora a circulação",
+    "Elimina toxinas",
+    "Promove relaxamento",
+    "Acelera recuperação pós-procedimentos",
+    "Fortalece sistema imunológico",
+    "Melhora qualidade do sono",
+    "Reduz celulite"
   ];
 
   const indications = [
-    'Pós-operatório',
-    'Retenção de líquidos',
-    'Inchaço nas pernas',
-    'Celulite',
-    'Fadiga',
-    'Estresse',
-    'Problemas circulatórios',
-    'Recuperação pós-treino'
+    "Pós-operatório",
+    "Retenção de líquidos",
+    "Inchaço nas pernas",
+    "Celulite",
+    "Fadiga",
+    "Estresse",
+    "Problemas circulatórios",
+    "Recuperação pós-treino"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Avaliação',
-      description: 'Análise do paciente e identificação das necessidades específicas.'
+      step: "1",
+      title: "Avaliação",
+      description: "Análise do paciente e identificação das necessidades específicas."
     },
     {
-      step: '2',
-      title: 'Preparação',
-      description: 'Ambiente relaxante e posicionamento adequado para o tratamento.'
+      step: "2",
+      title: "Preparação",
+      description: "Ambiente relaxante e posicionamento adequado para o tratamento."
     },
     {
-      step: '3',
-      title: 'Massagem',
-      description: 'Técnica específica de drenagem linfática manual ou com equipamentos.'
+      step: "3",
+      title: "Massagem",
+      description: "Técnica específica de drenagem linfática manual ou com equipamentos."
     },
     {
-      step: '4',
-      title: 'Orientações',
-      description: 'Recomendações para potencializar os resultados do tratamento.'
+      step: "4",
+      title: "Orientações",
+      description: "Recomendações para potencializar os resultados do tratamento."
     }
   ];
 

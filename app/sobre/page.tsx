@@ -1,29 +1,29 @@
-import ProfessionalProfile from '@/components/ProfessionalProfile';
-import ProfessionalSection from '@/components/ProfessionalProfile';
-import { Award, Users, Heart, Target } from 'lucide-react';
-import Image from 'next/image';
+import ProfessionalProfile from "@/components/ProfessionalProfile";
+import ProfessionalSection from "@/components/ProfessionalProfile";
+import { Award, Users, Heart, Target } from "lucide-react";
+import Image from "next/image";
 
 export default function Sobre() {
   const values = [
     {
       icon: <Heart className="w-8 h-8" />,
-      title: 'Cuidado Humanizado',
-      description: 'Tratamos cada paciente com atenção, carinho e respeito, priorizando seu bem-estar e conforto.'
+      title: "Cuidado Humanizado",
+      description: "Tratamos cada paciente com atenção, carinho e respeito, priorizando seu bem-estar e conforto."
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: 'Excelência Técnica',
-      description: 'Mantemos os mais altos padrões de qualidade em todos os nossos procedimentos e tratamentos.'
+      title: "Excelência Técnica",
+      description: "Mantemos os mais altos padrões de qualidade em todos os nossos procedimentos e tratamentos."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: 'Equipe Qualificada',
-      description: 'Nossa equipe está em constante atualização para oferecer as técnicas mais modernas e seguras.'
+      title: "Equipe Qualificada",
+      description: "Nossa equipe está em constante atualização para oferecer as técnicas mais modernas e seguras."
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: 'Resultados Naturais',
-      description: 'Focamos em realçar a beleza natural de cada paciente, respeitando suas características únicas.'
+      title: "Resultados Naturais",
+      description: "Focamos em realçar a beleza natural de cada paciente, respeitando suas características únicas."
     }
   ];
 
@@ -31,46 +31,46 @@ export default function Sobre() {
   const professionals = [
     {
       id: 1,
-      name: 'Dra. Monalisy Rodrigues',
-      title: 'Médica Especialista em Medicina Estética',
+      name: "Dra. Monalisy Rodrigues",
+      title: "Médica Especialista em Medicina Estética",
       description: [
-        'Médica especializada em medicina estética com vasta experiência em procedimentos faciais, corporais e capilares. Graduada em Medicina e especializada em Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.',
-        'Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na área estética, participando regularmente de congressos e cursos de atualização para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.',
-        'Sua filosofia de trabalho baseia-se na valorização da beleza natural, respeitando as características individuais e promovendo resultados harmoniosos e naturais através de técnicas minimamente invasivas.'
+        "Médica especializada em medicina estética com vasta experiência em procedimentos faciais, corporais e capilares. Graduada em Medicina e especializada em Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.",
+        "Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na área estética, participando regularmente de congressos e cursos de atualização para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.",
+        "Sua filosofia de trabalho baseia-se na valorização da beleza natural, respeitando as características individuais e promovendo resultados harmoniosos e naturais através de técnicas minimamente invasivas."
       ],
-      image: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8',
+      image: "https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8",
       education: [
-        'Medicina - Universidade Federal',
-        'Especialização em Dermatologia',
-        'Pós-graduação em Medicina Estética'
+        "Medicina - Universidade Federal",
+        "Especialização em Dermatologia",
+        "Pós-graduação em Medicina Estética"
       ],
       specializations: [
-        'Harmonização Facial',
-        'Rejuvenescimento',
-        'Tratamentos Corporais',
-        'Medicina Preventiva'
+        "Harmonização Facial",
+        "Rejuvenescimento",
+        "Tratamentos Corporais",
+        "Medicina Preventiva"
       ]
     },
     {
       id: 2,
-      name: 'Dra. Monalisy Rodrigues',
-      title: 'Médica Especialista em Medicina Estética',
+      name: "Dra. Monalisy Rodrigues",
+      title: "Médica Especialista em Medicina Estética",
       description: [
-        'Médica especializada em medicina estética com vasta experiência em procedimentos faciais, corporais e capilares. Graduada em Medicina e especializada em Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.',
-        'Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na área estética, participando regularmente de congressos e cursos de atualização para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.',
-        'Sua filosofia de trabalho baseia-se na valorização da beleza natural, respeitando as características individuais e promovendo resultados harmoniosos e naturais através de técnicas minimamente invasivas.'
+        "Médica especializada em medicina estética com vasta experiência em procedimentos faciais, corporais e capilares. Graduada em Medicina e especializada em Dermatologia, sempre buscando aperfeiçoamento nas mais modernas técnicas.",
+        "Com anos de prática clínica, dedica-se ao estudo contínuo das inovações na área estética, participando regularmente de congressos e cursos de atualização para oferecer sempre o que há de mais moderno e seguro aos seus pacientes.",
+        "Sua filosofia de trabalho baseia-se na valorização da beleza natural, respeitando as características individuais e promovendo resultados harmoniosos e naturais através de técnicas minimamente invasivas."
       ],
-      image: 'https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8',
+      image: "https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(43).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDMpLmpwZyIsImlhdCI6MTc1MDc2Nzk5MiwiZXhwIjo0OTA0MzY3OTkyfQ.GQB2II_eFT35u0epih-uiNxPnQMCGcpsJAlwEyu-av8",
       education: [
-        'Medicina - Universidade Federal',
-        'Especialização em Dermatologia',
-        'Pós-graduação em Medicina Estética'
+        "Medicina - Universidade Federal",
+        "Especialização em Dermatologia",
+        "Pós-graduação em Medicina Estética"
       ],
       specializations: [
-        'Harmonização Facial',
-        'Rejuvenescimento',
-        'Tratamentos Corporais',
-        'Medicina Preventiva'
+        "Harmonização Facial",
+        "Rejuvenescimento",
+        "Tratamentos Corporais",
+        "Medicina Preventiva"
       ]
     }
     // Adicione mais profissionais aqui conforme necessário

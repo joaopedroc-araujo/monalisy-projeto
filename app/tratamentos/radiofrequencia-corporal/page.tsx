@@ -1,50 +1,50 @@
-import Link from 'next/link';
-import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import Link from "next/link";
+import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function RadiofrequenciaCorporal() {
   const benefits = [
-    'Firmeza da pele',
-    'Redução da flacidez',
-    'Estimulação do colágeno',
-    'Melhora da circulação',
-    'Procedimento confortável',
-    'Sem tempo de inatividade',
-    'Resultados progressivos',
-    'Tratamento seguro'
+    "Firmeza da pele",
+    "Redução da flacidez",
+    "Estimulação do colágeno",
+    "Melhora da circulação",
+    "Procedimento confortável",
+    "Sem tempo de inatividade",
+    "Resultados progressivos",
+    "Tratamento seguro"
   ];
 
   const treatmentAreas = [
-    'Abdômen',
-    'Braços',
-    'Coxas',
-    'Glúteos',
-    'Costas',
-    'Pescoço',
-    'Flancos',
-    'Região do soutien'
+    "Abdômen",
+    "Braços",
+    "Coxas",
+    "Glúteos",
+    "Costas",
+    "Pescoço",
+    "Flancos",
+    "Região do soutien"
   ];
 
   const process = [
     {
-      step: '1',
-      title: 'Preparação',
-      description: 'Limpeza da pele e aplicação de gel condutor para o tratamento.'
+      step: "1",
+      title: "Preparação",
+      description: "Limpeza da pele e aplicação de gel condutor para o tratamento."
     },
     {
-      step: '2',
-      title: 'Aquecimento',
-      description: 'Aplicação gradual da radiofrequência com aquecimento controlado.'
+      step: "2",
+      title: "Aquecimento",
+      description: "Aplicação gradual da radiofrequência com aquecimento controlado."
     },
     {
-      step: '3',
-      title: 'Tratamento',
-      description: 'Movimentos circulares para distribuição uniforme da energia.'
+      step: "3",
+      title: "Tratamento",
+      description: "Movimentos circulares para distribuição uniforme da energia."
     },
     {
-      step: '4',
-      title: 'Finalização',
-      description: 'Hidratação da pele e orientações pós-tratamento.'
+      step: "4",
+      title: "Finalização",
+      description: "Hidratação da pele e orientações pós-tratamento."
     }
   ];
 
