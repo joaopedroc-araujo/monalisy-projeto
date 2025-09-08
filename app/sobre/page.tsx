@@ -102,17 +102,16 @@ export default function Sobre() {
                 </p>
               </div>
             </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                <Image
-                  src="/images/LSF (40).webp"
-                  alt="Clínica Monalisy Rodrigues"
-                  width={500}
-                  height={500}
-                  priority
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="relative rounded-2xl overflow-hidden bg-gray-100">
+              <Image
+                src="/images/@lucasantosfotografo-19.jpg"
+                alt="Clínica Monalisy Rodrigues"
+                width={6000}
+                height={4000}
+                priority
+                className="w-full h-auto"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

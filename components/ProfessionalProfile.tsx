@@ -87,7 +87,6 @@ const ProfessionalProfile = ({ professional, index, className = "" }: Profession
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 priority={index === 0}
-                unoptimized={true}
               />
             </div>
 

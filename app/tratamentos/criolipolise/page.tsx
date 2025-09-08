@@ -114,7 +114,6 @@ export default function Criolipolise() {
                   width={600}
                   height={600}
                   className="w-full h-full object-cover"
-                  unoptimized={true}
                 />
               </div>
             </div>
@@ -254,7 +253,7 @@ export default function Criolipolise() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-green-600">✓ Indicado para:</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">✓ Indicado para:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
@@ -279,7 +278,7 @@ export default function Criolipolise() {
               </ul>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-red-600">✗ Contraindicações:</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">✗ Contraindicações:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
                   <div className="w-5 h-5 bg-red-600 rounded-full flex-shrink-0"></div>

@@ -221,7 +221,6 @@ const ResponsiveImageGallery = memo(({
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                       onLoad={() => handleImageLoad(index)}
                       onError={() => handleImageError(index)}
-                      unoptimized={true} // Temporary fix for external URLs
                     />
 
                     {/* Gradient Overlay for Caption */}

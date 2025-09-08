@@ -271,7 +271,6 @@ const ThumbnailNavigation = memo(({
               sizes={`${thumbnailSize}px`}
               onLoad={() => handleThumbnailLoad(index)}
               onError={() => handleThumbnailError(index)}
-              unoptimized={true} // Temporary fix for external URLs
             />
           )}
 
