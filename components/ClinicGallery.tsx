@@ -13,13 +13,13 @@ const ClinicGallery = () => {
   const images: GalleryImage[] = [
     {
       id: 1,
-      src: "/images/LSF (24).webp",
+      src: "/images/@lucasantosfotografo-17.jpg",
       alt: "Recepção da Clínica Monalisy Rodrigues",
       caption: "Ambiente acolhedor e moderno da nossa recepção"
     },
     {
       id: 2,
-      src: "/images/LSF (38).webp",
+      src: "/images/@lucasantosfotografo-34.jpg",
       alt: "Sala de procedimentos",
       caption: "Preparação e atenção em cada detalhe"
     },
@@ -37,7 +37,7 @@ const ClinicGallery = () => {
     },
     {
       id: 5,
-      src: "/images/LSF (20).webp",
+      src: "/images/@lucasantosfotografo-10.jpg",
       alt: "Área de relaxamento",
       caption: "Espaços pensados para seu conforto e bem-estar"
     },
