@@ -16,7 +16,7 @@ export default function Tratamentos() {
       description: "Procedimento que visa equilibrar e realçar os traços faciais de forma natural e harmoniosa, utilizando técnicas avançadas de preenchimento e contorno.",
       duration: "60-90 min",
       price: "A partir de R$ 800",
-      image: "https://images.pexels.com/photos/3985333/pexels-photo-3985333.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/@lucasantosfotografo-45.jpg",
       href: "/tratamentos/harmonizacao-facial"
     },
     {
@@ -26,7 +26,7 @@ export default function Tratamentos() {
       description: "Tratamento para suavizar rugas de expressão e prevenir o envelhecimento, proporcionando uma aparência mais jovem e descansada.",
       duration: "30-45 min",
       price: "A partir de R$ 600",
-      image: "https://images.pexels.com/photos/3985334/pexels-photo-3985334.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/@lucasantosfotografo-54.jpg",
       href: "/tratamentos/toxina-botulinica"
     },
     {
@@ -36,7 +36,7 @@ export default function Tratamentos() {
       description: "Eliminação de gordura localizada através do congelamento controlado das células adiposas, sem cirurgia.",
       duration: "60-90 min",
       price: "A partir de R$ 400",
-      image: "https://images.pexels.com/photos/3736413/pexels-photo-3736413.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/@lucasantosfotografo-56.jpg",
       href: "/tratamentos/criolipolise"
     },
     {
@@ -46,7 +46,7 @@ export default function Tratamentos() {
       description: "Tratamento para firmeza e tonificação da pele, reduzindo flacidez corporal através do aquecimento controlado.",
       duration: "45-60 min",
       price: "A partir de R$ 300",
-      image: "https://images.pexels.com/photos/3985335/pexels-photo-3985335.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/@lucasantosfotografo-44.jpg",
       href: "/tratamentos/radiofrequencia-corporal"
     },
     {
@@ -56,7 +56,7 @@ export default function Tratamentos() {
       description: "Técnica que estimula o sistema linfático, reduzindo inchaço, melhorando a circulação e promovendo relaxamento.",
       duration: "60-75 min",
       price: "A partir de R$ 200",
-      image: "https://images.pexels.com/photos/3985337/pexels-photo-3985337.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/@lucasantosfotografo-49.jpg",
       href: "/tratamentos/drenagem-linfatica"
     },
     {
@@ -66,7 +66,7 @@ export default function Tratamentos() {
       description: "Aplicação de ativos revitalizantes diretamente no couro cabeludo para estimular o crescimento e fortalecer os fios.",
       duration: "45-60 min",
       price: "A partir de R$ 250",
-      image: "https://images.pexels.com/photos/3993096/pexels-photo-3993096.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/@lucasantosfotografo-51.jpg",
       href: "/tratamentos/mesoterapia-capilar"
     }
   ];
