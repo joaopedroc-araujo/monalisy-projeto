@@ -217,7 +217,7 @@ const ResponsiveImageGallery = memo(({
                       fill
                       className="object-cover object-center"
                       priority={index === 0}
-                      quality={90}
+                      quality={80}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                       onLoad={() => handleImageLoad(index)}
                       onError={() => handleImageError(index)}

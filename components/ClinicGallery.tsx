@@ -1,6 +1,7 @@
 "use client";
 
 import ResponsiveImageGallery from "./ResponsiveImageGallery";
+import { HeartHandshake, Sparkles, ShieldCheck } from "lucide-react";
 
 interface GalleryImage {
   id: number;
@@ -13,13 +14,13 @@ const ClinicGallery = () => {
   const images: GalleryImage[] = [
     {
       id: 1,
-      src: "/images/@lucasantosfotografo-17.jpg",
+      src: "/images/LSF (19).webp",
       alt: "Recepção da Clínica Monalisy Rodrigues",
       caption: "Ambiente acolhedor e moderno da nossa recepção"
     },
     {
       id: 2,
-      src: "/images/@lucasantosfotografo-34.jpg",
+      src: "/images/LSF (24).webp",
       alt: "Sala de procedimentos",
       caption: "Preparação e atenção em cada detalhe"
     },
@@ -37,7 +38,7 @@ const ClinicGallery = () => {
     },
     {
       id: 5,
-      src: "/images/@lucasantosfotografo-10.jpg",
+      src: "/images/LSF (40).webp",
       alt: "Área de relaxamento",
       caption: "Espaços pensados para seu conforto e bem-estar"
     },
@@ -79,7 +80,7 @@ const ClinicGallery = () => {
         <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <div className="text-center">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-600 rounded-full"></div>
+              <HeartHandshake className="w-7 h-7 sm:w-8 sm:h-8 text-gray-600" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Ambiente Moderno</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
@@ -88,7 +89,7 @@ const ClinicGallery = () => {
           </div>
           <div className="text-center">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-600 rounded-full"></div>
+              <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-gray-600" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Tecnologia Avançada</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
@@ -97,7 +98,7 @@ const ClinicGallery = () => {
           </div>
           <div className="text-center sm:col-span-2 lg:col-span-1">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-600 rounded-full"></div>
+              <ShieldCheck className="w-7 h-7 sm:w-8 sm:h-8 text-gray-600" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Higiene Rigorosa</h3>
             <p className="text-gray-600 text-sm leading-relaxed">

@@ -1,8 +1,10 @@
-import ClinicGallery from "@/components/ClinicGallery";
-import CTA from "@/components/home/CTA";
-import Features from "@/components/home/Features";
+import dynamic from "next/dynamic";
 import Hero from "@/components/home/Hero";
-import Treatments from "@/components/home/Treatments";
+
+const Features = dynamic(() => import("@/components/home/Features"));
+const ClinicGallery = dynamic(() => import("@/components/ClinicGallery"));
+const Treatments = dynamic(() => import("@/components/home/Treatments"));
+const CTA = dynamic(() => import("@/components/home/CTA"));
 
 export default function Home() {
   return (
