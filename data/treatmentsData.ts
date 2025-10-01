@@ -64,7 +64,7 @@ export const treatments: Treatment[] = [
     duration: "60-90 minutos",
     price: "A partir de R$ 800",
     image: {
-      src: "/images/@lucasantosfotografo-45.jpg",
+      src: "/images/LSF (18).webp",
       alt: "Harmonização Facial"
     },
     benefits: [
@@ -111,7 +111,7 @@ export const treatments: Treatment[] = [
     duration: "30-45 minutos",
     price: "A partir de R$ 600",
     image: {
-      src: "/images/@lucasantosfotografo-54.jpg",
+      src: "/images/LSF (20).webp",
       alt: "Toxina Botulínica"
     },
     benefits: ["Suavização de rugas de expressão", "Prevenção do envelhecimento", "Resultado natural e harmonioso", "Procedimento rápido e seguro", "Sem tempo de inatividade", "Melhora da autoestima", "Técnica minimamente invasiva", "Efeito duradouro"],
@@ -150,7 +150,7 @@ export const treatments: Treatment[] = [
     duration: "60-90 minutos",
     price: "A partir de R$ 400",
     image: {
-      src: "/images/@lucasantosfotografo-56.jpg",
+      src: "/images/LSF (23).webp",
       alt: "Criolipólise"
     },
     benefits: ["Redução de gordura localizada", "Procedimento não invasivo", "Sem tempo de recuperação", "Resultados duradouros", "Seguro e eficaz", "Não requer anestesia", "Retorno imediato às atividades", "Eliminação natural das células"],
@@ -194,7 +194,7 @@ export const treatments: Treatment[] = [
     duration: "45-60 minutos",
     price: "A partir de R$ 300",
     image: {
-      src: "/images/@lucasantosfotografo-44.jpg",
+      src: "/images/LSF (26).webp",
       alt: "Radiofrequência Corporal"
     },
     benefits: ["Firmeza da pele", "Redução da flacidez", "Estimulação do colágeno", "Melhora da circulação", "Procedimento confortável", "Sem tempo de inatividade", "Resultados progressivos", "Tratamento seguro"],
@@ -239,7 +239,7 @@ export const treatments: Treatment[] = [
     duration: "60-75 minutos",
     price: "A partir de R$ 200",
     image: {
-      src: "/images/@lucasantosfotografo-49.jpg",
+      src: "/images/LSF (38).webp",
       alt: "Drenagem Linfática"
     },
     benefits: ["Reduz inchaço e retenção", "Melhora a circulação", "Elimina toxinas", "Promove relaxamento", "Acelera recuperação pós-procedimentos", "Fortalece sistema imunológico", "Melhora qualidade do sono", "Reduz celulite"],
@@ -273,7 +273,7 @@ export const treatments: Treatment[] = [
     duration: "45-60 minutos",
     price: "A partir de R$ 250",
     image: {
-      src: "/images/@lucasantosfotografo-51.jpg",
+      src: "/images/LSF (18).webp",
       alt: "Mesoterapia Capilar"
     },
     benefits: ["Estimula o crescimento capilar", "Fortalece os fios", "Melhora a circulação do couro cabeludo", "Reduz a queda de cabelo", "Nutrição profunda", "Aumenta densidade capilar", "Melhora qualidade dos fios", "Revitaliza folículos pilosos"],

@@ -1,6 +1,11 @@
-import ProfessionalProfile from "@/components/ProfessionalProfile";
+import dynamic from "next/dynamic";
 import { Award, Users, Heart, Target } from "lucide-react";
 import Image from "next/image";
+
+const ProfessionalProfile = dynamic(() => import("@/components/ProfessionalProfile"));
+const MissionVisionValuesSection = dynamic(() => import("@/components/sobre/MissionVisionValuesSection"));
+const DifferentiatorsSection = dynamic(() => import("@/components/sobre/DifferentiatorsSection"));
+const TechnologySection = dynamic(() => import("@/components/sobre/TechnologySection"));
 
 export default function Sobre() {
   const values = [
@@ -26,7 +31,6 @@ export default function Sobre() {
     }
   ];
 
-  // Array de profissionais - você pode adicionar quantos quiser
   const professionals = [
     {
       id: 1,
@@ -72,16 +76,6 @@ export default function Sobre() {
         "Medicina Preventiva"
       ]
     }
-    // Adicione mais profissionais aqui conforme necessário
-    // {
-    //   id: 2,
-    //   name: 'Dr. João Silva',
-    //   title: 'Especialista em Dermatologia',
-    //   description: [...],
-    //   image: '...',
-    //   education: [...],
-    //   specializations: [...]
-    // }
   ];
 
   return (
@@ -104,7 +98,7 @@ export default function Sobre() {
             </div>
             <div className="relative rounded-2xl overflow-hidden bg-gray-100">
               <Image
-                src="/images/@lucasantosfotografo-19.jpg"
+                src="/images/LSF (19).webp"
                 alt="Clínica Monalisy Rodrigues"
                 width={6000}
                 height={4000}
@@ -117,67 +111,8 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="text-center">
-              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Missão</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Proporcionar tratamentos estéticos de alta qualidade, combinando tecnologia
-                avançada com cuidado humanizado, para realçar a beleza natural e promover
-                o bem-estar de nossos pacientes.
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Visão</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Ser reconhecida como referência em medicina estética, destacando-se pela
-                excelência técnica, inovação e resultados naturais que respeitam a
-                individualidade de cada paciente.
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-4">Valores</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Ética, transparência, segurança, excelência técnica e cuidado humanizado
-                são os pilares que orientam nossa prática médica e nosso relacionamento
-                com cada paciente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900 mb-4">
-              Nossos Diferenciais
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              O que nos torna únicos na área de medicina estética e como nos comprometemos
-              com a excelência em cada atendimento.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-gray-600 rounded-2xl mb-6 shadow-sm group-hover:bg-gray-900 group-hover:text-white transition-colors duration-300">
-                  {value.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {value.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <MissionVisionValuesSection />
+      <DifferentiatorsSection values={values} />
 
       {/* Professional Section */}
       <div>
@@ -190,49 +125,7 @@ export default function Sobre() {
         ))}
       </div>
 
-      {/* Technology Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-gray-900 mb-4">
-              Tecnologia e Equipamentos
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Investimos constantemente em tecnologia de ponta para oferecer os melhores
-              resultados com máxima segurança e conforto.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Equipamentos Modernos
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Utilizamos apenas equipamentos certificados e de última geração,
-                garantindo eficácia e segurança em todos os procedimentos.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Protocolos Rigorosos
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Seguimos protocolos internacionais de segurança e higiene,
-                assegurando o mais alto padrão de qualidade em nossos atendimentos.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Ambiente Seguro
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Nossa clínica oferece um ambiente totalmente seguro e confortável,
-                projetado para proporcionar tranquilidade durante os tratamentos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TechnologySection />
     </div>
   );
 }

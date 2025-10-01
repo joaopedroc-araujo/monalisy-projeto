@@ -4,6 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Clock, Star, Users, Award, Shield } from "lucide-react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const CTASection = dynamic(() => import("@/components/tratamentos/CTASection"));
 
 export default function Tratamentos() {
   const [selectedCategory, setSelectedCategory] = useState<string>("todos");
@@ -16,7 +19,7 @@ export default function Tratamentos() {
       description: "Procedimento que visa equilibrar e realçar os traços faciais de forma natural e harmoniosa, utilizando técnicas avançadas de preenchimento e contorno.",
       duration: "60-90 min",
       price: "A partir de R$ 800",
-      image: "/images/@lucasantosfotografo-45.jpg",
+      image: "/images/LSF (18).webp",
       href: "/tratamentos/harmonizacao-facial"
     },
     {
@@ -26,7 +29,7 @@ export default function Tratamentos() {
       description: "Tratamento para suavizar rugas de expressão e prevenir o envelhecimento, proporcionando uma aparência mais jovem e descansada.",
       duration: "30-45 min",
       price: "A partir de R$ 600",
-      image: "/images/@lucasantosfotografo-54.jpg",
+      image: "/images/LSF (20).webp",
       href: "/tratamentos/toxina-botulinica"
     },
     {
@@ -36,7 +39,7 @@ export default function Tratamentos() {
       description: "Eliminação de gordura localizada através do congelamento controlado das células adiposas, sem cirurgia.",
       duration: "60-90 min",
       price: "A partir de R$ 400",
-      image: "/images/@lucasantosfotografo-56.jpg",
+      image: "/images/LSF (23).webp",
       href: "/tratamentos/criolipolise"
     },
     {
@@ -46,7 +49,7 @@ export default function Tratamentos() {
       description: "Tratamento para firmeza e tonificação da pele, reduzindo flacidez corporal através do aquecimento controlado.",
       duration: "45-60 min",
       price: "A partir de R$ 300",
-      image: "/images/@lucasantosfotografo-44.jpg",
+      image: "/images/LSF (26).webp",
       href: "/tratamentos/radiofrequencia-corporal"
     },
     {
@@ -56,7 +59,7 @@ export default function Tratamentos() {
       description: "Técnica que estimula o sistema linfático, reduzindo inchaço, melhorando a circulação e promovendo relaxamento.",
       duration: "60-75 min",
       price: "A partir de R$ 200",
-      image: "/images/@lucasantosfotografo-49.jpg",
+      image: "/images/LSF (38).webp",
       href: "/tratamentos/drenagem-linfatica"
     },
     {
@@ -66,7 +69,7 @@ export default function Tratamentos() {
       description: "Aplicação de ativos revitalizantes diretamente no couro cabeludo para estimular o crescimento e fortalecer os fios.",
       duration: "45-60 min",
       price: "A partir de R$ 250",
-      image: "/images/@lucasantosfotografo-51.jpg",
+      image: "/images/LSF (18).webp",
       href: "/tratamentos/mesoterapia-capilar"
     }
   ];
@@ -203,29 +206,7 @@ export default function Tratamentos() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-playfair font-bold">
-              Pronto para transformar sua beleza?
-            </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Agende uma consulta personalizada e descubra qual tratamento é ideal
-              para alcançar seus objetivos estéticos com segurança e eficácia.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contato"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
-              >
-                Agendar Consulta
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASection />
     </div>
   );
 }
