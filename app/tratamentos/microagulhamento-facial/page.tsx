@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight, Clock, Star, CheckCircle, ArrowLeft } from 'lucide-react';
-import Image from 'next/image';
+import OptimizedImage from '@/components/OptimizedImage';
 
 export default function MicroagulhamentoFacial() {
   const benefits = [
@@ -113,13 +113,15 @@ export default function MicroagulhamentoFacial() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100 shadow-2xl">
-                <Image
+                <OptimizedImage
                   src="https://images.pexels.com/photos/3985336/pexels-photo-3985336.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Microagulhamento Facial"
                   width={600}
                   height={600}
                   className="w-full h-full object-cover"
-                  unoptimized={true}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={90}
+                  breakpoints={[360, 640, 960, 1280]}
                 />
               </div>
             </div>

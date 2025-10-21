@@ -1,7 +1,7 @@
 import ProfessionalProfile from '@/components/ProfessionalProfile';
 import ProfessionalSection from '@/components/ProfessionalProfile';
 import { Award, Users, Heart, Target } from 'lucide-react';
-import Image from 'next/image';
+import OptimizedImage from '@/components/OptimizedImage';
 
 export default function Sobre() {
   const values = [
@@ -105,13 +105,16 @@ export default function Sobre() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                <Image
+                <OptimizedImage
                   src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(40).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoNDApLmpwZyIsImlhdCI6MTc1MDg5NDc5OSwiZXhwIjo0OTA0NDk0Nzk5fQ.itpgHu3pg9D1kLaLrjcI4_OyF0DBWGAqnwnVmNUoato"
                   alt="Clínica Monalisy Rodrigues"
                   width={500}
                   height={500}
                   priority
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={90}
+                  breakpoints={[360, 640, 960, 1280]}
                 />
               </div>
             </div>

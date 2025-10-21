@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight, Star, Shield, Users, Clock } from 'lucide-react';
-import Image from 'next/image';
+import OptimizedImage from '@/components/OptimizedImage';
 import ClinicGallery from '@/components/ClinicGallery';
 
 export default function Home() {
@@ -84,13 +84,16 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                <Image
+                <OptimizedImage
                   src="https://yurieycpflogldnppkki.supabase.co/storage/v1/object/sign/fotos-site/LSF%20(39).jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lOTA2NThlNy0xY2QyLTRjYWMtYjQzZC1iNTZiMWU5ZmRlNzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJmb3Rvcy1zaXRlL0xTRiAoMzkpLmpwZyIsImlhdCI6MTc1MDM3MDczMywiZXhwIjo0OTAzOTcwNzMzfQ.kAad5hr71WhrMZl6GHJN5KOVGDg1Jgcjd9L17o4GBGM"
                   priority
                   alt="Clínica Monalisy Rodrigues"
-                  width={4000}
-                  height={6000}
+                  width={1600}
+                  height={1600}
                   className="w-full h-full object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={95}
+                  breakpoints={[480, 768, 1024, 1440, 1920]}
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-200 rounded-2xl -z-10"></div>
@@ -151,12 +154,15 @@ export default function Home() {
               <div key={index} className="group">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                   <div className="aspect-video overflow-hidden bg-gray-100">
-                    <Image
+                    <OptimizedImage
                       src={treatment.image}
                       alt={treatment.title}
                       width={800}
                       height={450}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 320px"
+                      quality={90}
+                      breakpoints={[320, 480, 640, 800, 960]}
                     />
                   </div>
                   <div className="p-8">
