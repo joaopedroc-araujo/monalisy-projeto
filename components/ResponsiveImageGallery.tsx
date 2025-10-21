@@ -2,9 +2,9 @@
 
 import { useState, useCallback, useEffect, memo, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
-import Image from 'next/image';
 import ThumbnailNavigation from './ThumbnailNavigation';
 import { useDebounce } from '@/hooks/useDebounce';
+import OptimizedImage from './OptimizedImage';
 
 interface GalleryImage {
   id: number;
@@ -212,7 +212,7 @@ const ResponsiveImageGallery = memo(({
                   </div>
                 ) : (
                   <>
-                    <Image
+                    <OptimizedImage
                       src={image.src}
                       alt={image.alt}
                       fill
@@ -222,7 +222,6 @@ const ResponsiveImageGallery = memo(({
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                       onLoad={() => handleImageLoad(index)}
                       onError={() => handleImageError(index)}
-                      unoptimized={true} // Temporary fix for external URLs
                     />
 
                     {/* Gradient Overlay for Caption */}

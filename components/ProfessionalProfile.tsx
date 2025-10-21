@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import OptimizedImage from './OptimizedImage';
 
 interface ProfessionalData {
   id: number;
@@ -80,14 +80,14 @@ const ProfessionalProfile = ({ professional, index, className = '' }: Profession
           {/* Imagem */}
           <div className={`relative ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-100 shadow-2xl">
-              <Image
+              <OptimizedImage
                 src={professional.image}
                 alt={professional.name}
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 priority={index === 0}
-                unoptimized={true}
+                quality={90}
               />
             </div>
 

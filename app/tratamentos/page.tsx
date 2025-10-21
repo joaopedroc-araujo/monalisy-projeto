@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Clock, Star, Users, Award, Shield } from 'lucide-react';
-import Image from 'next/image';
+import OptimizedImage from '@/components/OptimizedImage';
 
 export default function Tratamentos() {
   const [selectedCategory, setSelectedCategory] = useState<string>('todos');
@@ -169,13 +169,15 @@ export default function Tratamentos() {
               >
                 {/* Treatment Image */}
                 <div className="aspect-video overflow-hidden bg-gray-100">
-                  <Image
+                  <OptimizedImage
                     src={treatment.image}
                     alt={treatment.title}
                     width={400}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    unoptimized={true}
+                    quality={90}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    breakpoints={[320, 480, 640, 768, 960]}
                   />
                 </div>
 

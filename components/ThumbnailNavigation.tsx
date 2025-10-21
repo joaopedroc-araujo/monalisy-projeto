@@ -2,9 +2,9 @@
 
 import { memo, useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 import { useDebounce } from '@/hooks/useDebounce';
 import { useVirtualization } from '@/hooks/useVirtualization';
+import OptimizedImage from './OptimizedImage';
 
 interface GalleryImage {
   id: number;
@@ -260,7 +260,7 @@ const ThumbnailNavigation = memo(({
               </div>
             </div>
           ) : (
-            <Image
+            <OptimizedImage
               src={image.src}
               alt={image.alt}
               width={thumbnailSize}
@@ -271,7 +271,7 @@ const ThumbnailNavigation = memo(({
               sizes={`${thumbnailSize}px`}
               onLoad={() => handleThumbnailLoad(index)}
               onError={() => handleThumbnailError(index)}
-              unoptimized={true} // Temporary fix for external URLs
+              breakpoints={[thumbnailSize, thumbnailSize * 1.5]}
             />
           )}
 
