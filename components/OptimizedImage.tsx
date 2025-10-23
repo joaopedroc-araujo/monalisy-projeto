@@ -1,7 +1,10 @@
 'use client';
 
-import { ImgHTMLAttributes, memo, useMemo, useState } from 'react';
-import { buildCloudinarySrcSet, buildCloudinaryUrl, hasCloudinaryConfig } from '@/lib/cloudinary';
+import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
+import { memo, useMemo, useState } from 'react';
+
+import { hasCloudinaryConfig } from '@/lib/cloudinary';
 
 type LoadingType = 'lazy' | 'eager';
 
@@ -19,7 +22,7 @@ type OptimizedImageProps = {
   breakpoints?: number[];
   onLoad?: () => void;
   onError?: () => void;
-} & Omit<ImgHTMLAttributes<HTMLImageElement>, 'onLoad' | 'onError' | 'sizes' | 'src' | 'alt'>;
+};
 
 const OptimizedImage = memo(({
   src,
@@ -35,51 +38,18 @@ const OptimizedImage = memo(({
   breakpoints,
   onLoad,
   onError,
-  ...rest
 }: OptimizedImageProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
   const hasCloudinary = useMemo(() => hasCloudinaryConfig(), []);
 
-  const baseWidth = width ?? (fill ? 1280 : undefined);
-  const baseHeight = height;
-
-  const cropMode = baseWidth && baseHeight ? 'fill' : undefined;
-
-  const transformedSrc = useMemo(() => {
-    if (!hasCloudinary) {
-      return src;
-    }
-
-    return buildCloudinaryUrl(src, {
-      width: baseWidth,
-      height: baseHeight,
-      quality,
-      cropMode: cropMode ?? (fill ? 'limit' : undefined),
-    });
-  }, [src, baseWidth, baseHeight, quality, fill, hasCloudinary, cropMode]);
-
-  const srcSet = useMemo(() => {
-    if (!hasCloudinary) {
-      return undefined;
-    }
-
-    return buildCloudinarySrcSet(src, {
-      width: baseWidth,
-      height: baseHeight,
-      quality,
-      cropMode: cropMode ?? (fill ? 'limit' : undefined),
-      breakpoints,
-    });
-  }, [src, baseWidth, baseHeight, quality, fill, breakpoints, hasCloudinary, cropMode]);
-
-  const handleLoad: ImgHTMLAttributes<HTMLImageElement>['onLoad'] = (event) => {
+  const handleLoad = () => {
     setIsLoading(false);
     onLoad?.();
   };
 
-  const handleError: ImgHTMLAttributes<HTMLImageElement>['onError'] = () => {
+  const handleError = () => {
     setIsLoading(false);
     setHasError(true);
     onError?.();
@@ -95,24 +65,21 @@ const OptimizedImage = memo(({
 
   const imageClassName = `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`;
   const wrapperClassName = fill ? `relative ${isLoading ? 'min-h-[1px]' : ''}` : 'relative';
+  const isRemoteSrc = /^https?:\/\//i.test(src);
 
-  const imageProps: ImgHTMLAttributes<HTMLImageElement> = {
-    src: transformedSrc,
+  const commonImageProps = {
     alt,
     className: imageClassName,
-    loading: priority ? 'eager' : loading,
-    fetchPriority: priority ? 'high' : undefined,
-    decoding: 'async',
+    priority,
+    quality,
+    sizes: sizes ?? '100vw',
+    fill,
+    width: !fill ? width : undefined,
+    height: !fill ? height : undefined,
+    loading: priority ? undefined : loading,
+    fetchPriority: priority ? 'high' as const : undefined,
     onLoad: handleLoad,
     onError: handleError,
-    sizes: sizes ?? '100vw',
-    style: fill
-      ? { position: 'absolute', inset: 0, width: '100%', height: '100%' }
-      : undefined,
-    ...(!fill && width ? { width } : {}),
-    ...(!fill && height ? { height } : {}),
-    ...(srcSet ? { srcSet } : {}),
-    ...rest,
   };
 
   return (
@@ -120,7 +87,20 @@ const OptimizedImage = memo(({
       {isLoading && (
         <div className={`absolute inset-0 bg-gray-200 animate-pulse ${fill ? '' : className}`} />
       )}
-      <img {...imageProps} />
+      {hasCloudinary ? (
+        <CldImage
+          src={src}
+          {...commonImageProps}
+          deliveryType={isRemoteSrc ? 'fetch' : undefined}
+          crop={fill || (width && height) ? { type: 'auto', source: true } : undefined}
+          breakpoints={breakpoints}
+        />
+      ) : (
+        <Image
+          src={src}
+          {...commonImageProps}
+        />
+      )}
     </div>
   );
 });
